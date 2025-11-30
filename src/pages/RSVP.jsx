@@ -6,48 +6,53 @@ function RSVP() {
     document.title = 'RSVP - Wedding Celebration'
   }, [])
 
-  // Update with actual RSVP information
-  const rsvpDeadline = 'November 15, 2024'
-  const maxGuests = 2
+  // ⚠️ REPLACE THIS WITH YOUR ACTUAL GOOGLE FORM EMBED URL
+  // To get your Google Form embed URL:
+  // 1. Open your Google Form
+  // 2. Click "Send" button
+  // 3. Click the "<>" (embed) icon
+  // 4. Copy the iframe src URL
+  const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true'
 
   return (
     <div className="rsvp-page">
       <section className="rsvp-content section">
         <div className="container">
-          <h1 className="page-title">RSVP</h1>
-          <p className="page-subtitle">We hope you can join us!</p>
-          <div className="rsvp-card">
-            <div className="rsvp-info">
-              <div className="info-item">
-                <div className="info-icon">📅</div>
-                <div className="info-content">
-                  <h2>RSVP Deadline</h2>
-                  <p className="info-value">{rsvpDeadline}</p>
-                  <p className="info-description">
-                    Please let us know if you'll be joining us by this date so we can make proper arrangements.
-                  </p>
-                </div>
-              </div>
+          <div className="rsvp-header">
+            <h1 className="page-title">RSVP</h1>
+            <p className="page-subtitle">Kindly confirm your attendance below.</p>
+          </div>
 
-              <div className="info-divider"></div>
+          {/* Adults-Only Notice */}
+          <div className="adults-only-notice-rsvp">
+            <p className="adults-only-text-rsvp">
+              While we love our little ones, we have decided to make our wedding an adults-only celebration. Thank you for understanding.
+            </p>
+          </div>
 
-              <div className="info-item">
-                <div className="info-icon">👥</div>
-                <div className="info-content">
-                  <h2>Maximum Guests</h2>
-                  <p className="info-value">{maxGuests} {maxGuests === 1 ? 'Guest' : 'Guests'} per Invitation</p>
-                  <p className="info-description">
-                    Due to venue capacity, each invitation allows for a maximum of {maxGuests} {maxGuests === 1 ? 'guest' : 'guests'}.
-                  </p>
-                </div>
-              </div>
-            </div>
+          {/* Google Form Embed */}
+          <div className="form-container">
+            <iframe
+              src={googleFormUrl}
+              width="100%"
+              height="600"
+              frameBorder="0"
+              marginHeight="0"
+              marginWidth="0"
+              title="RSVP Form"
+              className="rsvp-form"
+            >
+              Loading…
+            </iframe>
+          </div>
 
-            <div className="rsvp-note">
-              <p>
-                <strong>Important:</strong> Please contact us directly to confirm your attendance.
-                We look forward to celebrating with you!
-              </p>
+          {/* Contact Information Section */}
+          <div className="contact-info-card">
+            <div className="contact-icon">📞</div>
+            <div className="contact-content">
+              <h2 className="contact-title">RSVP & Enquiries Contact Number</h2>
+              <p className="contact-number">+358 XX XXX XXXX</p>
+              <p className="contact-note">(placeholder - please update with actual contact number)</p>
             </div>
           </div>
         </div>
@@ -57,4 +62,3 @@ function RSVP() {
 }
 
 export default RSVP
-

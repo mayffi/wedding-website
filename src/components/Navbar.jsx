@@ -27,10 +27,10 @@ function Navbar() {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/locations', label: 'Locations' },
-    { path: '/registry', label: 'Registry' },
-    { path: '/menu', label: 'Menu' },
-    { path: '/photos', label: 'Photos' },
     { path: '/rsvp', label: 'RSVP' },
+    { path: '/registry', label: 'Wedding Registry' },
+    { path: '/menu', label: 'Food Menu' },
+    { path: '/photos', label: 'Photos' },
   ]
 
   return (
