@@ -1,0 +1,240 @@
+.home-page {
+  padding-top: 70px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('/IMG_2023.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Names Section */
+.names-section {
+  background-color: var(--bg-white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.couple-names {
+  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Georgia', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.wedding-date {
+  font-size: 1rem;
+  color: var(--text-dark);
+  letter-spacing: 4px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: var(--bg-white);
+  padding: 50px 0;
+}
+
+.welcome-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.divider-line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(43, 80, 142, 0.2);
+  margin: 30px 0;
+}
+
+/* Story Section */
+.story-section {
+  background-color: var(--cream-bg);
+  padding: 60px 0 80px;
+}
+
+.story-title {
+  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Georgia', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.story-subtitle {
+  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Georgia', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.story-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Countdown Section */
+.countdown-section {
+  background-color: var(--bg-white);
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+/* Schedule Section */
+.schedule-section {
+  background-color: var(--cream-bg);
+}
+
+.schedule-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--bg-white);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(43, 80, 142, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.schedule-icon {
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.schedule-content h3 {
+  color: var(--primary);
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.schedule-time {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.schedule-divider {
+  height: 1px;
+  background: var(--primary);
+  margin: 0 20px;
+  opacity: 0.3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 400px;
+    height: 50vh;
+    background-attachment: scroll;
+  }
+
+  .couple-names {
+    font-size: 2.5rem;
+  }
+
+  .wedding-date {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+
+  .story-title {
+    font-size: 2.5rem;
+  }
+
+  .story-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .schedule-card {
+    padding: 30px 20px;
+  }
+
+  .schedule-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .schedule-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .welcome-text,
+  .story-text {
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+}

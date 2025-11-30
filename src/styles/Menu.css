@@ -1,0 +1,112 @@
+.menu-page {
+  padding-top: 70px;
+}
+
+.menu-content {
+  background-color: var(--bg-main);
+  padding: 60px 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background-color: var(--bg-white);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(43, 80, 142, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 3px solid var(--blue-accent);
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(43, 80, 142, 0.15);
+}
+
+.dish-name {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.dish-ingredients {
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.dietary-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.dietary-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.tag-vegetarian {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border-color: #4caf50;
+}
+
+.tag-vegan {
+  background-color: rgba(139, 195, 74, 0.1);
+  color: #8bc34a;
+  border-color: #8bc34a;
+}
+
+.tag-gluten-free {
+  background-color: rgba(255, 152, 0, 0.1);
+  color: #ff9800;
+  border-color: #ff9800;
+}
+
+.tag-dairy-free {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
+.tag-nut-free {
+  background-color: rgba(156, 39, 176, 0.1);
+  color: #9c27b0;
+  border-color: #9c27b0;
+}
+
+.tag-default {
+  background-color: rgba(43, 80, 142, 0.1);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .menu-item {
+    padding: 25px 20px;
+  }
+
+  .dish-name {
+    font-size: 1.25rem;
+  }
+}
+

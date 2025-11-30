@@ -1,0 +1,64 @@
+.registry-page {
+  padding-top: 70px;
+}
+
+.registry-content {
+  background-color: var(--bg-main);
+  padding: 60px 0;
+}
+
+.registry-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--bg-white);
+  border-radius: 16px;
+  padding: 60px 50px;
+  box-shadow: 0 8px 30px rgba(43, 80, 142, 0.1);
+  text-align: center;
+}
+
+.registry-message {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-style: italic;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.registry-intro {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.registry-link-container {
+  margin: 40px 0;
+}
+
+.registry-link {
+  font-size: 1.1rem;
+  padding: 15px 40px;
+}
+
+.registry-footer {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .registry-card {
+    padding: 40px 30px;
+  }
+
+  .registry-message {
+    font-size: 1.25rem;
+  }
+
+  .registry-intro {
+    font-size: 1rem;
+  }
+}
+
