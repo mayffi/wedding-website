@@ -211,7 +211,12 @@
   .hero-section {
     min-height: 400px;
     height: 50vh;
+  }
+
+  .hero-image {
     background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
   }
 
   .couple-names {
@@ -264,6 +269,19 @@
 
   .adults-only-text {
     font-size: 0.85rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 350px;
+    height: 45vh;
+  }
+
+  .hero-image {
+    background-size: cover;
+    background-position: center center;
   }
 }
 
