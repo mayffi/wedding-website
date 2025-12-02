@@ -9,7 +9,7 @@ import RSVP from './pages/RSVP'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/wedding-website">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
