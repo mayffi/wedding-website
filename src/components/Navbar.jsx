@@ -37,7 +37,7 @@ function Navbar() {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <span className="logo-text">Samuel & Mayfred</span>
+          <span className="logo-text">Home</span>
         </Link>
         
         <button 

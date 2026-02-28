@@ -6,8 +6,8 @@ import '../styles/Home.css'
 function Home() {
   // Set wedding date - Update this with actual wedding date
   const weddingDate = '2026-06-06T11:30:00'
-  const coupleName1 = 'Samuel Awini'
-  const coupleName2 = 'Mayfred Appiah'
+  const coupleName1 = 'Samuel'
+  const coupleName2 = 'Mayfred'
 
   useEffect(() => {
     document.title = 'Home - Wedding Celebration'
@@ -34,9 +34,8 @@ function Home() {
         <div className="container">
           <div className="welcome-content">
             <p className="welcome-text">
-              WELCOME TO OUR WEDDING WEBSITE. HERE YOU CAN FIND THE MOST UP TO DATE INFORMATION 
-              REGARDING OUR WEDDING INCLUDING IMPORTANT HOTEL AND CONTACT INFORMATION. WE ARE SO 
-              EXCITED TO CELEBRATE WITH EVERYONE. PLEASE CHECK BACK FOR MORE UPDATES CLOSER TO OUR DATE.
+              Welcome to our website. Here you will find the details of the event. We are very excited 
+              to celebrate this special day with you. Please check back for more updates as the date gets closer.
             </p>
             <div className="divider-line"></div>
             
@@ -56,11 +55,10 @@ function Home() {
           <h2 className="story-title">Our Story</h2>
           <h3 className="story-subtitle">How We Met</h3>
           <p className="story-text">
-            SAMUEL AND MAYFRED MET THROUGH MUTUAL FRIENDS AT A SPECIAL GATHERING. THEY CONNECTED 
-            INSTANTLY AND DISCOVERED THEY SHARED MANY COMMON INTERESTS AND VALUES. A FEW MONTHS 
-            LATER THEY DECIDED TO DATE AND HAVE BEEN INSEPARABLE EVER SINCE. THEIR LOVE STORY 
-            CONTINUES TO GROW WITH EACH PASSING DAY, AND THEY ARE THRILLED TO CELEBRATE THEIR 
-            UNION WITH FAMILY AND FRIENDS.
+            We met on our way to a Ghanaian artist's show in Helsinki, not knowing that a simple 
+            encounter would change our lives. Our conversation flowed effortlessly. We stayed in touch, 
+            and what began as a spark of connection soon grew into a beautiful friendship which 
+            blossomed into a love story.
           </p>
         </div>
       </section>
