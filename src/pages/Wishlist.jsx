@@ -39,7 +39,11 @@ function Wishlist() {
         { event: '*', schema: 'public', table: 'purchased_items' },
         (payload) => {
           if (payload.eventType === 'INSERT') {
-            setPurchased((prev) => [...prev, payload.new])
+            setPurchased((prev) =>
+              prev.some((p) => p.item_id === payload.new.item_id)
+                ? prev
+                : [...prev, payload.new]
+            )
           } else if (payload.eventType === 'DELETE') {
             setPurchased((prev) =>
               prev.filter((p) => p.item_id !== payload.old.item_id)
@@ -55,12 +59,14 @@ function Wishlist() {
   }, [])
 
   async function markPurchased(itemId) {
+    setPurchased((prev) => [...prev, { item_id: itemId, browser_id: browserId }])
     await supabase
       .from('purchased_items')
       .insert({ item_id: itemId, browser_id: browserId })
   }
 
   async function unmarkPurchased(itemId) {
+    setPurchased((prev) => prev.filter((p) => p.item_id !== itemId))
     await supabase
       .from('purchased_items')
       .delete()
@@ -150,7 +156,6 @@ function Wishlist() {
                           <button
                             className="gift-card__toggle"
                             onClick={() => markPurchased(item.id)}
-                            aria-pressed={false}
                           >
                             Mark as Purchased
                           </button>
@@ -159,7 +164,6 @@ function Wishlist() {
                           <button
                             className="gift-card__toggle gift-card__toggle--undo"
                             onClick={() => unmarkPurchased(item.id)}
-                            aria-pressed={true}
                           >
                             Unmark my selection
                           </button>
