@@ -169,13 +169,6 @@ export const cashGift = {
 export const wishlist = {
   items: [
     {
-      id: 'item-1',
-      name: 'Example Gift Item',
-      price: '€99',
-      url: 'https://www.example.com/product',
-      image: 'https://placehold.co/400x300?text=Gift+Item',
-    },
-    {
       id: 'item-2',
       name: 'Another Gift Item',
       price: '€149',
@@ -188,6 +181,13 @@ export const wishlist = {
       price: '€249',
       url: 'https://www.example.com/product-3',
       image: 'https://placehold.co/400x300?text=Gift+Item+3',
+    },
+    {
+      id: 'item-4',
+      name: 'Apple Mac mini M4 Pro',
+      price: '€2 749',
+      url: 'https://www.verkkokauppa.com/fi/product/967250/Apple-Mac-mini-M4-Pro-64-Gt-1-Tt-tietokone-MCX44',
+      image: 'https://cdn.verk.net/images/17/2_967250-4000x4000.jpeg',
     },
   ],
 }

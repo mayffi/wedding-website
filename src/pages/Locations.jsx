@@ -33,11 +33,11 @@ function Locations() {
                   <h4>Directions</h4>
                   <div className="directions-grid">
                     <div className="direction-item">
-                      <h5>🚗 Driving</h5>
+                      <h5>Driving</h5>
                       <p>{ceremony.directions.driving}</p>
                     </div>
                     <div className="direction-item">
-                      <h5>🚇 Public Transport</h5>
+                      <h5>Public Transport</h5>
                       <p>{ceremony.directions.transit}</p>
                     </div>
                   </div>
@@ -93,11 +93,11 @@ function Locations() {
                   <h4>Directions</h4>
                   <div className="directions-grid">
                     <div className="direction-item">
-                      <h5>🚗 Driving</h5>
+                      <h5>Driving</h5>
                       <p>{reception.directions.driving}</p>
                     </div>
                     <div className="direction-item">
-                      <h5>🚇 Public Transport</h5>
+                      <h5>Public Transport</h5>
                       <p>{reception.directions.transit}</p>
                     </div>
                   </div>
