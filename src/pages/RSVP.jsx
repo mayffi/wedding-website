@@ -6,13 +6,9 @@ function RSVP() {
     document.title = 'RSVP - Wedding Celebration'
   }, [])
 
-  // ⚠️ REPLACE THIS WITH YOUR ACTUAL GOOGLE FORM EMBED URL
-  // To get your Google Form embed URL:
-  // 1. Open your Google Form
-  // 2. Click "Send" button
-  // 3. Click the "<>" (embed) icon
-  // 4. Copy the iframe src URL
-  const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true'
+  // Google Form embed URL for RSVP submissions
+  const googleFormUrl =
+    'https://docs.google.com/forms/d/e/1FAIpQLScGguQVSes3_aAqgILJgXdykI5jjYtP0fydbI_J3Ml0nsZ6lw/viewform?embedded=true'
 
   return (
     <div className="rsvp-page">
@@ -35,7 +31,7 @@ function RSVP() {
             <iframe
               src={googleFormUrl}
               width="100%"
-              height="600"
+              height="700"
               frameBorder="0"
               marginHeight="0"
               marginWidth="0"
