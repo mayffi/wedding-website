@@ -94,19 +94,18 @@
 .wishlist-intro {
   text-align: center;
   max-width: 680px;
-  margin: 0 auto 8px;
+  margin: 0 auto 48px;
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--text-dark);
 }
 
-.wishlist-note {
+.wishlist-loading {
   text-align: center;
-  max-width: 680px;
-  margin: 0 auto 48px;
-  font-size: 0.85rem;
-  color: #888;
+  color: var(--text-dark);
+  opacity: 0.6;
   font-style: italic;
+  padding: 40px 0;
 }
 
 /* ── Gift Grid ── */
