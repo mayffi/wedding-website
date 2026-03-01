@@ -58,7 +58,8 @@
 
 .rsvp-form {
   width: 100%;
-  min-height: 600px;
+  height: 80vh;
+  max-height: 1200px;
   border: none;
   border-radius: 12px;
 }
@@ -134,7 +135,8 @@
   }
 
   .rsvp-form {
-    min-height: 500px;
+    height: 90vh;
+    max-height: none;
   }
 
   .contact-info-card {
@@ -174,7 +176,8 @@
   }
 
   .rsvp-form {
-    min-height: 400px;
+    height: 100vh;
+    max-height: none;
   }
 
   .contact-info-card {
