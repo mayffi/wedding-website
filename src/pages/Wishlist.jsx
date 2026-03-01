@@ -88,7 +88,7 @@ function Wishlist() {
                       loading="lazy"
                     />
                     {isPurchased && (
-                      <div className="gift-card__purchased-overlay">
+                      <div className="gift-card__purchased-overlay" aria-hidden="true">
                         <span>Purchased</span>
                       </div>
                     )}
@@ -102,6 +102,7 @@ function Wishlist() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn gift-card__link"
+                        aria-label={`View ${item.name}`}
                       >
                         View Item
                       </a>
