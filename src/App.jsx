@@ -10,7 +10,7 @@ import Wishlist from './pages/Wishlist'
 
 function App() {
   return (
-    <Router basename="/wedding-website">
+    <Router basename="/">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
