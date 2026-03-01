@@ -85,6 +85,7 @@ function Wishlist() {
                       src={item.image}
                       alt={item.name}
                       className="gift-card__image"
+                      loading="lazy"
                     />
                     {isPurchased && (
                       <div className="gift-card__purchased-overlay">
@@ -107,6 +108,7 @@ function Wishlist() {
                       <button
                         className={`gift-card__toggle ${isPurchased ? 'gift-card__toggle--undo' : ''}`}
                         onClick={() => togglePurchased(item.id)}
+                        aria-pressed={isPurchased}
                       >
                         {isPurchased ? 'Mark as Available' : 'Mark as Purchased'}
                       </button>
