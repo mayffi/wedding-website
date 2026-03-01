@@ -1,13 +1,11 @@
 import { useEffect } from 'react'
 import '../styles/Registry.css'
+import { registry } from '../config/wedding'
 
 function Registry() {
   useEffect(() => {
     document.title = 'Registry - Wedding Celebration'
   }, [])
-
-  // Update with actual registry link
-  const registryLink = 'https://www.example-registry.com/our-wedding'
 
   return (
     <div className="registry-page">
@@ -25,7 +23,7 @@ function Registry() {
             
             <div className="registry-link-container">
               <a
-                href={registryLink}
+                href={registry.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="registry-link btn"
