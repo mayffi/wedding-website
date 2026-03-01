@@ -69,7 +69,7 @@ export const ceremony = {
     transit:
       'Take Tram 4 or Tram 10 to the Johanneksenkirkko stop — 4 min walk (224 m). Alternatively, take Metro M1/M2 to Rautatientori (Helsinki Central) and walk 5 min south. Buses 16, 20, 30, 67, 75 & 77 also serve the area. Tickets via the HSL app or ticket machine (AB zone, adult €3.20).',
     parking:
-      'Pay & Display street parking is available on Bernhardinkatu 3-4, directly outside the church. Nearest parking garage: Aimo Park Kasarmitori at Fabianinkatu 4, 00130 Helsinki (~400 m walk, ~5 min).',
+      'Street parking is available on Bernhardinkatu 3-4, directly outside the church and surrounding areas. Nearest parking garage: Aimo Park Kasarmitori at Fabianinkatu 4, 00130 Helsinki (~400 m walk, ~5 min).',
   },
 }
 
