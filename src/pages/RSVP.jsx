@@ -1,14 +1,24 @@
 import { useEffect } from 'react'
 import '../styles/RSVP.css'
+import { rsvp, contact, notices } from '../config/wedding'
 
 function RSVP() {
   useEffect(() => {
     document.title = 'RSVP - Wedding Celebration'
-  }, [])
 
-  // Google Form embed URL for RSVP submissions
-  const googleFormUrl =
-    'https://docs.google.com/forms/d/e/1FAIpQLScGguQVSes3_aAqgILJgXdykI5jjYtP0fydbI_J3Ml0nsZ6lw/viewform?embedded=true'
+    // Load Tally embed script for auto-resizing
+    const script = document.createElement('script')
+    script.src = 'https://tally.so/widgets/embed.js'
+    script.async = true
+    script.onload = () => {
+      if (window.Tally) window.Tally.loadEmbeds()
+    }
+    document.body.appendChild(script)
+
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
 
   return (
     <div className="rsvp-page">
@@ -22,24 +32,23 @@ function RSVP() {
           {/* Adults-Only Notice */}
           <div className="adults-only-notice-rsvp">
             <p className="adults-only-text-rsvp">
-              While we love our little ones, we have decided to make our wedding an adults-only celebration. Thank you for understanding.
+              {notices.adultsOnly}
             </p>
           </div>
 
-          {/* Google Form Embed */}
+          {/* Tally Form Embed */}
           <div className="form-container">
             <iframe
-              src={googleFormUrl}
+              data-tally-src={rsvp.tallyFormUrl}
+              loading="lazy"
               width="100%"
-              height="700"
+              height="200"
               frameBorder="0"
               marginHeight="0"
               marginWidth="0"
               title="RSVP Form"
               className="rsvp-form"
-            >
-              Loading…
-            </iframe>
+            />
           </div>
 
           {/* Contact Information Section */}
@@ -47,7 +56,7 @@ function RSVP() {
             <div className="contact-icon">📞</div>
             <div className="contact-content">
               <h2 className="contact-title">RSVP & Enquiries Contact Number</h2>
-              <p className="contact-number">+358 XX XXX XXXX</p>
+              <p className="contact-number">{contact.phone}</p>
               <p className="contact-note">(placeholder - please update with actual contact number)</p>
             </div>
           </div>

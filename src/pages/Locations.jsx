@@ -1,19 +1,11 @@
 import { useEffect } from 'react'
 import '../styles/Locations.css'
+import { ceremony, reception } from '../config/wedding'
 
 function Locations() {
   useEffect(() => {
     document.title = 'Locations - Wedding Celebration'
   }, [])
-
-  // Update these with actual addresses
-  const ceremonyAddress = '123 Wedding Chapel Lane, City, State 12345'
-  const receptionAddress = '456 Reception Hall Avenue, City, State 12345'
-
-  // Google Maps embed URLs - Using search query (no API key needed)
-  // Replace with actual addresses or coordinates
-  const ceremonyMapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184132576!2d-73.98811768459418!3d40.758895979327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMyLjAiTiA3M8KwNTknMTcuMiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus`
-  const receptionMapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184132576!2d-73.98811768459418!3d40.758895979327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMyLjAiTiA3M8KwNTknMTcuMiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus`
 
   return (
     <div className="locations-page">
@@ -34,26 +26,26 @@ function Locations() {
             </div>
             <div className="location-content">
               <div className="location-info">
-                <h3 className="venue-name">Beautiful Wedding Chapel</h3>
-                <p className="venue-address">{ceremonyAddress}</p>
+                <h3 className="venue-name">{ceremony.venueName}</h3>
+                <p className="venue-address">{ceremony.address}</p>
                 
                 <div className="directions-section">
                   <h4>Directions</h4>
                   <div className="directions-grid">
                     <div className="direction-item">
                       <h5>🚗 Driving</h5>
-                      <p>Take Highway 101 North, exit at Chapel Street. The venue is on the right.</p>
+                      <p>{ceremony.directions.driving}</p>
                     </div>
                     <div className="direction-item">
                       <h5>🚇 Public Transport</h5>
-                      <p>Take Metro Line 2 to Chapel Station. Walk 5 minutes north.</p>
+                      <p>{ceremony.directions.transit}</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="parking-info">
                   <h4>Parking</h4>
-                  <p>Complimentary valet parking available. Street parking also available nearby.</p>
+                  <p>{ceremony.directions.parking}</p>
                 </div>
               </div>
 
@@ -66,11 +58,11 @@ function Locations() {
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
-                  src={ceremonyMapUrl}
+                  src={ceremony.mapUrl}
                 ></iframe>
                 <p className="map-note">
                   <a 
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ceremonyAddress)}`}
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ceremony.address)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="map-link"
@@ -94,26 +86,26 @@ function Locations() {
             </div>
             <div className="location-content">
               <div className="location-info">
-                <h3 className="venue-name">Elegant Reception Hall</h3>
-                <p className="venue-address">{receptionAddress}</p>
+                <h3 className="venue-name">{reception.venueName}</h3>
+                <p className="venue-address">{reception.address}</p>
                 
                 <div className="directions-section">
                   <h4>Directions</h4>
                   <div className="directions-grid">
                     <div className="direction-item">
                       <h5>🚗 Driving</h5>
-                      <p>Take Main Street to Reception Avenue. The hall is on the left side.</p>
+                      <p>{reception.directions.driving}</p>
                     </div>
                     <div className="direction-item">
                       <h5>🚇 Public Transport</h5>
-                      <p>Take Bus Route 15 to Reception Stop. The venue is across the street.</p>
+                      <p>{reception.directions.transit}</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="parking-info">
                   <h4>Parking</h4>
-                  <p>Large parking lot available on-site. Additional parking at adjacent lot.</p>
+                  <p>{reception.directions.parking}</p>
                 </div>
               </div>
 
@@ -126,11 +118,11 @@ function Locations() {
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
-                  src={receptionMapUrl}
+                  src={reception.mapUrl}
                 ></iframe>
                 <p className="map-note">
                   <a 
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(receptionAddress)}`}
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(reception.address)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="map-link"

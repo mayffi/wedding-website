@@ -2,12 +2,9 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import CountdownTimer from '../components/CountdownTimer'
 import '../styles/Home.css'
+import { couple, contact, notices, welcome, story, schedule, rsvp } from '../config/wedding'
 
 function Home() {
-  // Set wedding date - Update this with actual wedding date
-  const weddingDate = '2026-06-06T11:30:00'
-  const coupleName1 = 'Samuel'
-  const coupleName2 = 'Mayfred'
 
   useEffect(() => {
     document.title = 'Home - Wedding Celebration'
@@ -24,8 +21,8 @@ function Home() {
       {/* Couple Names and Date Section */}
       <section className="names-section">
         <div className="container">
-          <h1 className="couple-names">{coupleName1} & {coupleName2}</h1>
-          <p className="wedding-date">JUNE 6, 2026</p>
+          <h1 className="couple-names">{couple.name1} & {couple.name2}</h1>
+          <p className="wedding-date">{couple.weddingDateFormatted}</p>
         </div>
       </section>
 
@@ -34,15 +31,14 @@ function Home() {
         <div className="container">
           <div className="welcome-content">
             <p className="welcome-text">
-              Welcome to our website. Here you will find the details of the event. We are very excited 
-              to celebrate this special day with you. Please check back for more updates as the date gets closer.
+              {welcome.message}
             </p>
             <div className="divider-line"></div>
             
             {/* Adults-Only Notice */}
             <div className="adults-only-notice">
               <p className="adults-only-text">
-                While we love our little ones, we have decided to make our wedding an adults-only celebration. Thank you for understanding.
+                {notices.adultsOnly}
               </p>
             </div>
           </div>
@@ -55,10 +51,7 @@ function Home() {
           <h2 className="story-title">Our Story</h2>
           <h3 className="story-subtitle">How We Met</h3>
           <p className="story-text">
-            We met on our way to a Ghanaian artist's show in Helsinki, not knowing that a simple 
-            encounter would change our lives. Our conversation flowed effortlessly. We stayed in touch, 
-            and what began as a spark of connection soon grew into a beautiful friendship which 
-            blossomed into a love story.
+            {story.text}
           </p>
         </div>
       </section>
@@ -67,7 +60,7 @@ function Home() {
       <section className="countdown-section section">
         <div className="container">
           <h2 className="section-title">Counting Down to Our Special Day</h2>
-          <CountdownTimer targetDate={weddingDate} />
+          <CountdownTimer targetDate={couple.weddingDate} />
         </div>
       </section>
 
@@ -80,7 +73,7 @@ function Home() {
               <div className="schedule-icon">💒</div>
               <div className="schedule-content">
                 <h3>Ceremony</h3>
-                <p className="schedule-time">11:30 AM - 1:00 PM</p>
+                <p className="schedule-time">{schedule.ceremony}</p>
               </div>
             </div>
             <div className="schedule-divider"></div>
@@ -88,7 +81,7 @@ function Home() {
               <div className="schedule-icon">🍾</div>
               <div className="schedule-content">
                 <h3>Reception</h3>
-                <p className="schedule-time">2:30 PM - 8:00 PM</p>
+                <p className="schedule-time">{schedule.reception}</p>
               </div>
             </div>
           </div>
@@ -101,7 +94,7 @@ function Home() {
           <div className="rsvp-info-card">
             <div className="rsvp-info-content">
               <h2 className="rsvp-info-title">RSVP</h2>
-              <p className="rsvp-deadline">Please RSVP by <strong>10.05.2026</strong></p>
+              <p className="rsvp-deadline">Please RSVP by <strong>{rsvp.deadline}</strong></p>
               <Link to="/rsvp" className="rsvp-link btn">
                 RSVP Now
               </Link>
@@ -110,7 +103,7 @@ function Home() {
               <div className="rsvp-contact-icon">📞</div>
               <div className="rsvp-contact-details">
                 <h3 className="rsvp-contact-title">RSVP & Enquiries Contact Number</h3>
-                <p className="rsvp-contact-number">+358 XX XXX XXXX</p>
+                <p className="rsvp-contact-number">{contact.phone}</p>
               </div>
             </div>
           </div>

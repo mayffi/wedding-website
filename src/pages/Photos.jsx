@@ -1,20 +1,11 @@
 import { useEffect } from 'react'
 import '../styles/Photos.css'
+import { photos } from '../config/wedding'
 
 function Photos() {
   useEffect(() => {
     document.title = 'Photos - Wedding Celebration'
   }, [])
-
-  // Update with actual photo sharing link
-  const photoLink = 'https://drive.google.com/drive/folders/your-photo-folder-id'
-  const uploadInstructions = `
-    To share your photos with us:
-    1. Click the button below to access our shared photo album
-    2. Upload your favorite moments from the wedding
-    3. Feel free to add captions or comments
-    4. Thank you for helping us capture these precious memories!
-  `
 
   return (
     <div className="photos-page">
@@ -33,15 +24,15 @@ function Photos() {
               <div className="upload-instructions">
                 <h3>Upload Instructions</h3>
                 <div className="instructions-text">
-                  {uploadInstructions.split('\n').map((line, index) => (
-                    <p key={index}>{line.trim()}</p>
+                  {photos.uploadInstructions.map((line, index) => (
+                    <p key={index}>{line}</p>
                   ))}
                 </div>
               </div>
 
               <div className="photos-link-container">
                 <a
-                  href={photoLink}
+                  href={photos.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="photos-link btn"
