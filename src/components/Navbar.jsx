@@ -29,6 +29,7 @@ function Navbar() {
     { path: '/locations', label: 'Locations' },
     { path: '/rsvp', label: 'RSVP' },
     { path: '/registry', label: 'Wedding Registry' },
+    { path: '/wishlist', label: 'Gift Wishlist' },
     { path: '/menu', label: 'Food Menu' },
     { path: '/photos', label: 'Photos' },
   ]
