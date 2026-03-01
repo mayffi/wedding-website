@@ -149,3 +149,45 @@ export const menu = {
     },
   ],
 }
+
+// ---------------------------------------------------------------------------
+// Cash Gift (shown at top of Wishlist page)
+// ---------------------------------------------------------------------------
+export const cashGift = {
+  message:
+    "Your presence is the greatest gift of all! If you'd like to celebrate with a monetary gift, we'd be truly grateful. You can send it via:",
+  mobilePay: '+358 XX XXX XXXX', // replace with real MobilePay number
+  iban: 'FI XX XXXX XXXX XXXX XX', // replace with real IBAN
+  bankName: 'Nordea', // replace with real bank name
+}
+
+// ---------------------------------------------------------------------------
+// Gift Wishlist items
+// Note: provide 'image' as a direct URL (e.g. product CDN image).
+// Open Graph scraping is not possible on a static site — no backend is available.
+// ---------------------------------------------------------------------------
+export const wishlist = {
+  items: [
+    {
+      id: 'item-1',
+      name: 'Example Gift Item',
+      price: '€99',
+      url: 'https://www.example.com/product',
+      image: 'https://via.placeholder.com/400x300?text=Gift+Item',
+    },
+    {
+      id: 'item-2',
+      name: 'Another Gift Item',
+      price: '€149',
+      url: 'https://www.example.com/product-2',
+      image: 'https://via.placeholder.com/400x300?text=Gift+Item+2',
+    },
+    {
+      id: 'item-3',
+      name: 'Third Gift Item',
+      price: '€249',
+      url: 'https://www.example.com/product-3',
+      image: 'https://via.placeholder.com/400x300?text=Gift+Item+3',
+    },
+  ],
+}
