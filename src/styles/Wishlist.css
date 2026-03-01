@@ -85,7 +85,7 @@
   padding: 60px 0 80px;
 }
 
-.page-title {
+.wishlist-page-title {
   text-align: center;
   color: var(--primary);
   margin-bottom: 16px;
@@ -239,7 +239,7 @@
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
   font-family: inherit;
 }
 

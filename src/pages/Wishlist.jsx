@@ -33,7 +33,7 @@ function Wishlist() {
   return (
     <div className="wishlist-page">
       {/* ── Cash Gift Section ── */}
-      <section className="cash-gift-section section">
+      <section className="cash-gift-section">
         <div className="container">
           <div className="cash-gift-card">
             <div className="cash-gift-icon">♥</div>
@@ -59,9 +59,9 @@ function Wishlist() {
       </section>
 
       {/* ── Gift Items Section ── */}
-      <section className="wishlist-section section">
+      <section className="wishlist-section">
         <div className="container">
-          <h1 className="page-title">Gift Wishlist</h1>
+          <h1 className="wishlist-page-title">Gift Wishlist</h1>
           <p className="wishlist-intro">
             Here are some things we would love to have in our new home together.
             If you'd like to give one of these gifts, please click "Mark as
