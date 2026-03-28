@@ -87,13 +87,6 @@ export const reception = {
 }
 
 // ---------------------------------------------------------------------------
-// Registry
-// ---------------------------------------------------------------------------
-export const registry = {
-  link: 'https://www.example-registry.com/our-wedding',
-}
-
-// ---------------------------------------------------------------------------
 // Photos
 // ---------------------------------------------------------------------------
 export const photos = {
@@ -133,7 +126,7 @@ export const menu = {
       name: 'Fried Plantain and Beans',
       ingredients:
         'Fried ripe plantains and beans stew cooked with palm oil,tomatoes, onions, and spices',
-      tags: [, 'Gluten-Free', 'Dairy-Free'],
+      tags: ['Gluten-Free', 'Dairy-Free'],
     },
     {
       name: 'Banku with Pepper and Fish',

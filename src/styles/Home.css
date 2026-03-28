@@ -88,7 +88,7 @@
   margin: 30px auto 0;
   padding: 20px 25px;
   background-color: var(--bg-white);
-  border: 1px solid #D1AB6D;
+  border: 1px solid var(--gold-accent);
   border-radius: 8px;
   text-align: center;
 }

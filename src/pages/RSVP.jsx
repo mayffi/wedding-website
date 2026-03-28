@@ -57,7 +57,6 @@ function RSVP() {
             <div className="contact-content">
               <h2 className="contact-title">RSVP & Enquiries Contact Number</h2>
               <p className="contact-number">{contact.phone}</p>
-              <p className="contact-note">(placeholder - please update with actual contact number)</p>
             </div>
           </div>
         </div>
