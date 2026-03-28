@@ -78,8 +78,8 @@ export const ceremony = {
 // ---------------------------------------------------------------------------
 export const reception = {
   venueName: 'Reception Hall',
-  address: 'Keskikatu 5, Kerava',
-  mapUrl: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184132576!2d-73.98811768459418!3d40.758895979327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMyLjAiTiA3M8KwNTknMTcuMiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus`,
+  address: 'Keskikatu 5, 04200 Kerava',
+  mapUrl: 'https://maps.google.com/maps?q=Keskikatu+5,+04200+Kerava,+Finland&output=embed',
   directions: {
     'Public transportation': 'From Helsinki Cental Station, take the R (towards Riihimäki), K(towards Kerava) or Z(towards Lahti) train and get off at Kerava station. From Kerava station, it’s a 10-minute walk to the reception venue at Keskikatu 5.',
     parking: 'There are several parking options near the reception venue. Street parking is also available on Keskikatu and surrounding streets. ',
