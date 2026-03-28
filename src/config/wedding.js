@@ -155,7 +155,7 @@ export const menu = {
 export const cashGift = {
   message:
     "Your presence is the greatest gift of all! If you'd like to celebrate with a monetary gift, we'd be truly grateful. You can send it via:",
-  Name:'Mayfred Appiah',
+  name: 'Mayfred Appiah',
   mobilePay: '[REDACTED]', // replace with real MobilePay number
   iban: '[REDACTED]', // replace with real IBAN
   bankName: 'Nordea', // replace with real bank name

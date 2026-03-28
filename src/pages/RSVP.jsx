@@ -11,7 +11,7 @@ function RSVP() {
     script.src = 'https://tally.so/widgets/embed.js'
     script.async = true
     script.onload = () => {
-      if (window.Tally) window.Tally.loadEmbeds()
+      window.Tally?.loadEmbeds()
     }
     document.body.appendChild(script)
 

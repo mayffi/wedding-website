@@ -2,20 +2,8 @@
   padding-top: 70px;
 }
 
-.locations-hero,
-.menu-hero,
-.registry-hero,
-.photos-hero,
-.rsvp-hero {
-  background: var(--blue-accent);
-  color: var(--text-light);
-  text-align: center;
-  padding: 100px 0 80px;
-}
-
 .locations-page,
 .menu-page,
-.registry-page,
 .photos-page,
 .rsvp-page {
   background-color: var(--bg-main);

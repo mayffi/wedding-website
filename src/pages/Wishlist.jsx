@@ -88,7 +88,7 @@ function Wishlist() {
             <div className="cash-gift-details">
               <div className="cash-gift-row">
                 <span className="cash-gift-label">Name</span>
-                <span className="cash-gift-value">{cashGift.Name}</span>
+                <span className="cash-gift-value">{cashGift.name}</span>
               </div>
               <div className="cash-gift-divider" />
               <div className="cash-gift-row">
