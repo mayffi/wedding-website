@@ -18,6 +18,7 @@ function Wishlist() {
   const [browserId] = useState(getBrowserId)
   const [purchased, setPurchased] = useState([])
   const [loading, setLoading] = useState(true)
+  const [fetchError, setFetchError] = useState(false)
 
   useEffect(() => {
     document.title = 'Wedding Registry - Wedding Celebration'
@@ -28,7 +29,8 @@ function Wishlist() {
       .from('purchased_items')
       .select('item_id, browser_id')
       .then(({ data, error }) => {
-        if (!error && data) setPurchased(data)
+        if (error) setFetchError(true)
+        else if (data) setPurchased(data)
         setLoading(false)
       })
 
@@ -119,6 +121,8 @@ function Wishlist() {
 
           {loading ? (
             <p className="wishlist-loading">Loading...</p>
+          ) : fetchError ? (
+            <p className="wishlist-loading">Could not load registry data. Please refresh the page.</p>
           ) : (
             <div className="wishlist-grid">
               {wishlist.items.map((item) => {

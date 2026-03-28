@@ -17,12 +17,12 @@
   padding: 50px 44px;
   box-shadow: 0 8px 30px rgba(43, 80, 142, 0.1);
   text-align: center;
-  border-top: 4px solid #D1AB6D;
+  border-top: 4px solid var(--gold-accent);
 }
 
 .cash-gift-icon {
   font-size: 2rem;
-  color: #D1AB6D;
+  color: var(--gold-accent);
   margin-bottom: 12px;
 }
 

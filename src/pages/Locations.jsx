@@ -12,7 +12,7 @@ function Locations() {
       <section className="location-section section">
         <div className="container">
           <h1 className="page-title">Wedding Locations</h1>
-          <p className="page-subtitle">Join us at these beautiful venues</p>
+          <p className="page-subtitle">Join us to celebrate our special day</p>
         </div>
       </section>
 
@@ -32,14 +32,14 @@ function Locations() {
                 <div className="directions-section">
                   <h4>Directions</h4>
                   <div className="directions-grid">
-                    <div className="direction-item">
-                      <h5>Driving</h5>
-                      <p>{ceremony.directions.driving}</p>
-                    </div>
-                    <div className="direction-item">
-                      <h5>Public Transport</h5>
-                      <p>{ceremony.directions.transit}</p>
-                    </div>
+                    {Object.entries(ceremony.directions)
+                      .filter(([key]) => key !== 'parking')
+                      .map(([key, value]) => (
+                        <div key={key} className="direction-item">
+                          <h5>{key.charAt(0).toUpperCase() + key.slice(1)}</h5>
+                          <p>{value}</p>
+                        </div>
+                      ))}
                   </div>
                 </div>
 
@@ -92,14 +92,14 @@ function Locations() {
                 <div className="directions-section">
                   <h4>Directions</h4>
                   <div className="directions-grid">
-                    <div className="direction-item">
-                      <h5>Driving</h5>
-                      <p>{reception.directions.driving}</p>
-                    </div>
-                    <div className="direction-item">
-                      <h5>Public Transport</h5>
-                      <p>{reception.directions.transit}</p>
-                    </div>
+                    {Object.entries(reception.directions)
+                      .filter(([key]) => key !== 'parking')
+                      .map(([key, value]) => (
+                        <div key={key} className="direction-item">
+                          <h5>{key.charAt(0).toUpperCase() + key.slice(1)}</h5>
+                          <p>{value}</p>
+                        </div>
+                      ))}
                   </div>
                 </div>
 
