@@ -2,6 +2,15 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../styles/Navbar.css'
 
+const navItems = [
+  { path: '/', label: 'Home' },
+  { path: '/locations', label: 'Locations' },
+  { path: '/rsvp', label: 'RSVP' },
+  { path: '/wishlist', label: 'Wedding Registry' },
+  { path: '/menu', label: 'Food Menu' },
+  { path: '/photos', label: 'Photos' },
+]
+
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -23,15 +32,6 @@ function Navbar() {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false)
   }
-
-  const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/locations', label: 'Locations' },
-    { path: '/rsvp', label: 'RSVP' },
-    { path: '/wishlist', label: 'Wedding Registry' },
-    { path: '/menu', label: 'Food Menu' },
-    { path: '/photos', label: 'Photos' },
-  ]
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>

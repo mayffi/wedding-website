@@ -105,13 +105,6 @@
   margin-bottom: 8px;
 }
 
-.contact-note {
-  font-size: 0.9rem;
-  color: var(--text-dark);
-  opacity: 0.6;
-  font-style: italic;
-  margin: 0;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -131,7 +124,6 @@
     padding: 20px;
     margin-bottom: 40px;
   }
-
 
   .contact-info-card {
     flex-direction: column;

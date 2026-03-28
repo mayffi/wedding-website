@@ -10,10 +10,8 @@ function Menu() {
   const getTagClass = (tag) => {
     const tagMap = {
       'Vegetarian': 'tag-vegetarian',
-      'Vegan': 'tag-vegan',
       'Gluten-Free': 'tag-gluten-free',
       'Dairy-Free': 'tag-dairy-free',
-      'Nut-Free': 'tag-nut-free'
     }
     return tagMap[tag] || 'tag-default'
   }

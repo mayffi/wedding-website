@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import '../styles/CountdownTimer.css'
 
+const MS_PER_DAY = 1000 * 60 * 60 * 24
+const MS_PER_HOUR = 1000 * 60 * 60
+const MS_PER_MINUTE = 1000 * 60
+
 function CountdownTimer({ targetDate }) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -17,10 +21,10 @@ function CountdownTimer({ targetDate }) {
 
       if (difference > 0) {
         setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+          days: Math.floor(difference / MS_PER_DAY),
+          hours: Math.floor((difference % MS_PER_DAY) / MS_PER_HOUR),
+          minutes: Math.floor((difference % MS_PER_HOUR) / MS_PER_MINUTE),
+          seconds: Math.floor((difference % MS_PER_MINUTE) / 1000),
         })
       } else {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 })
