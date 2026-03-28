@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import '../styles/Wishlist.css'
-import { cashGift, wishlist } from '../config/wedding'
+import '../styles/Registry.css'
+import { cashGift, registry } from '../config/wedding'
 import { supabase } from '../lib/supabase'
 
 const BROWSER_ID_KEY = 'wedding_browser_id'
@@ -14,7 +14,7 @@ function getBrowserId() {
   return id
 }
 
-function Wishlist() {
+function Registry() {
   const [browserId] = useState(getBrowserId)
   const [purchased, setPurchased] = useState([])
   const [loading, setLoading] = useState(true)
@@ -77,7 +77,7 @@ function Wishlist() {
   }
 
   return (
-    <div className="wishlist-page">
+    <div className="registry-page">
       {/* ── Cash Gift Section ── */}
       <section className="cash-gift-section">
         <div className="container">
@@ -110,22 +110,22 @@ function Wishlist() {
       </section>
 
       {/* ── Gift Items Section ── */}
-      <section className="wishlist-section">
+      <section className="registry-section">
         <div className="container">
-          <h1 className="wishlist-page-title">Wedding Registry</h1>
-          <p className="wishlist-intro">
+          <h1 className="registry-page-title">Wedding Registry</h1>
+          <p className="registry-intro">
             Here are some things we would love to have in our new home together.
             If you'd like to give one of these gifts, please click "Mark as
             Purchased" so other guests know it's been taken.
           </p>
 
           {loading ? (
-            <p className="wishlist-loading">Loading...</p>
+            <p className="registry-loading">Loading...</p>
           ) : fetchError ? (
-            <p className="wishlist-loading">Could not load registry data. Please refresh the page.</p>
+            <p className="registry-loading">Could not load registry data. Please refresh the page.</p>
           ) : (
-            <div className="wishlist-grid">
-              {wishlist.items.map((item) => {
+            <div className="registry-grid">
+              {registry.items.map((item) => {
                 const purchaseRow = purchased.find((p) => p.item_id === item.id)
                 const isPurchased = !!purchaseRow
                 const isMyPurchase = purchaseRow?.browser_id === browserId
@@ -190,4 +190,4 @@ function Wishlist() {
   )
 }
 
-export default Wishlist
+export default Registry

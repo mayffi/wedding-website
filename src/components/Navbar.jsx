@@ -6,7 +6,7 @@ const navItems = [
   { path: '/', label: 'Home' },
   { path: '/locations', label: 'Locations' },
   { path: '/rsvp', label: 'RSVP' },
-  { path: '/wishlist', label: 'Wedding Registry' },
+  { path: '/registry', label: 'Wedding Registry' },
   { path: '/menu', label: 'Food Menu' },
   { path: '/photos', label: 'Photos' },
 ]
