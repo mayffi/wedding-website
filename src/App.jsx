@@ -5,7 +5,7 @@ import Locations from './pages/Locations'
 import Menu from './pages/Menu'
 import Photos from './pages/Photos'
 import RSVP from './pages/RSVP'
-import Wishlist from './pages/Wishlist'
+import Registry from './pages/Registry'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/rsvp" element={<RSVP />} />
-          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/registry" element={<Registry />} />
         </Routes>
       </Layout>
     </Router>

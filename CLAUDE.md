@@ -40,7 +40,7 @@ Wedding-specific content is hardcoded per-page:
 |------|---------------|
 | `src/pages/Home.jsx` | `weddingDate`, `coupleName1`, `coupleName2`, schedule times |
 | `src/pages/Locations.jsx` | Venue addresses, Google Maps embed URLs |
-| `src/pages/Registry.jsx` | Registry link |
+| `src/pages/Registry.jsx` | Gift registry items, cash gift details (Supabase-backed) |
 | `src/pages/Menu.jsx` | `menuItems` array |
 | `src/pages/Photos.jsx` | Photo sharing link |
 | `src/pages/RSVP.jsx` | `googleFormUrl` (Google Form embed), contact number |

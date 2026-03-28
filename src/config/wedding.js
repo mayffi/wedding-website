@@ -150,7 +150,7 @@ export const menu = {
 }
 
 // ---------------------------------------------------------------------------
-// Cash Gift (shown at top of Wishlist page)
+// Cash Gift (shown at top of Registry page)
 // ---------------------------------------------------------------------------
 export const cashGift = {
   message:
@@ -162,11 +162,11 @@ export const cashGift = {
 }
 
 // ---------------------------------------------------------------------------
-// Gift Wishlist items
+// Gift Registry items
 // Note: provide 'image' as a direct URL (e.g. product CDN image).
 // Open Graph scraping is not possible on a static site — no backend is available.
 // ---------------------------------------------------------------------------
-export const wishlist = {
+export const registry = {
   items: [
     {
       id: 'item-1',
