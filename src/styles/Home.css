@@ -14,11 +14,11 @@
 .hero-image {
   width: 100%;
   height: 100%;
-  background-image: url('/IMG_2023.png');
-  background-size: cover;
+  background-image: url('/samandmay1.jpeg');
+  background-size: contain;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-color: var(--cream-bg);
 }
 
 .hero-overlay {

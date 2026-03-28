@@ -11,23 +11,24 @@ function Photos() {
     <div className="photos-page">
       <section className="photos-content section">
         <div className="container">
-          <h1 className="page-title">Wedding Photos</h1>
-          <p className="page-subtitle">Share your memories with us</p>
+          <h1 className="page-title">Share Your Photos & Videos</h1>
+          <p className="page-subtitle">We'd love to see your photos from our special day! Please share your moments
+                to this special album.</p>
           <div className="photos-card">
             <div className="photos-info">
-              <h2>Share Your Photos</h2>
-              <p className="photos-description">
-                We'd love to see your photos from our special day! Please upload your favorite moments
-                to our shared album.
-              </p>
-              
+
               <div className="upload-instructions">
-                <h3>Upload Instructions</h3>
+                <h2>How to share with us</h2>
                 <div className="instructions-text">
                   {photos.uploadInstructions.map((line, index) => (
                     <p key={index}>{line}</p>
                   ))}
                 </div>
+              </div>
+
+              <div className="qr-code-container">
+                <img src="/photosqr.png" alt="QR code to upload wedding photos" className="qr-code" />
+                <p className="qr-label">Scan to share</p>
               </div>
 
               <div className="photos-link-container">
@@ -37,7 +38,7 @@ function Photos() {
                   rel="noopener noreferrer"
                   className="photos-link btn"
                 >
-                  View & Upload Photos
+                   Share Photos and Videos
                 </a>
               </div>
             </div>

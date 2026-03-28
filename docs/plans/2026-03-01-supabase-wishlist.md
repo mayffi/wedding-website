@@ -8,7 +8,7 @@
 
 **Tech Stack:** React 18, Vite, @supabase/supabase-js, Supabase Postgres + Realtime, GitHub Actions
 
----
+--
 
 ### Codebase conventions
 
