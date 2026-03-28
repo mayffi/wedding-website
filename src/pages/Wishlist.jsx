@@ -85,6 +85,11 @@ function Wishlist() {
             <p className="cash-gift-message">{cashGift.message}</p>
             <div className="cash-gift-details">
               <div className="cash-gift-row">
+                <span className="cash-gift-label">Name</span>
+                <span className="cash-gift-value">{cashGift.Name}</span>
+              </div>
+              <div className="cash-gift-divider" />
+              <div className="cash-gift-row">
                 <span className="cash-gift-label">MobilePay</span>
                 <span className="cash-gift-value">{cashGift.mobilePay}</span>
               </div>
