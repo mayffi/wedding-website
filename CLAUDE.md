@@ -26,7 +26,7 @@ React 18 + Vite + React Router v6 SPA. No CSS frameworks — all styling is pure
 - `--primary: #2B508E` (navy blue)
 - `--secondary` / `--blue-accent: #82AED1` (light blue) — primary button color
 - `--cream-bg: #F8F3EB`
-- Gold `#D1AB6D` — used sparingly for dividers, icons, highlights (not a CSS variable)
+- `--gold-accent: #D1AB6D` — used sparingly for dividers, icons, highlights
 
 ## Deployment
 
