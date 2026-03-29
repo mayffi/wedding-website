@@ -67,7 +67,7 @@ export const ceremony = {
     driving:
       'The church is centrally located in the Kaartinkaupunki district. Drive to Bernhardinkatu 4, 00130 Helsinki. Street parking is available directly on Bernhardinkatu.',
     transit:
-      'Take Tram 2 to Eteläranta tra stop and 5 min walk (257 m). Alternatively, take Tram 7 and stop at senaatintori and walk 11 mins (630 m). Tickets via the HSL app or ticket machine (AB zone, adult €3.20).',
+      'Take Tram 2 to Eteläranta tra stop and 5 min walk (257 m). Alternatively, take Tram 7 and stop at senaatintori and walk 11 mins (630 m).',
     parking:
       'Street parking is available on Bernhardinkatu 3-4, directly outside the church and surrounding areas(Eteläranta and laivasillankatu). Nearest parking garage: Aimo Park Kasarmitori at Fabianinkatu 4, 00130 Helsinki (~400 m walk, ~5 min).  Another option is Makasiiniranta P2 and P3 .',
   },
