@@ -38,7 +38,7 @@
 }
 
 .couple-names {
-  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Georgia', serif;
+  font-family: 'Georgia', serif;
   font-size: 4rem;
   font-weight: 400;
   color: var(--text-dark);
@@ -134,7 +134,7 @@
 }
 
 .story-title {
-  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Georgia', serif;
+  font-family: 'Georgia', serif;
   font-size: 3.5rem;
   font-weight: 400;
   color: var(--text-dark);
@@ -144,7 +144,7 @@
 }
 
 .story-subtitle {
-  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Georgia', serif;
+  font-family: 'Georgia', serif;
   font-size: 2rem;
   font-weight: 400;
   color: var(--text-dark);
