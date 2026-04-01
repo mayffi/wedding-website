@@ -201,5 +201,21 @@ export const registry = {
       image:
         "https://hh2.pigugroup.eu/colours/832/736/2/8327362/oljy-etikkapullosarja-2x150-ml-lasi-08ab3-netistai_reference.jpg",
     },
+    {
+      id: "item-5",
+      name: "Nicolas Vahé Pizzaleikkuri",
+      price: "€8",
+      url: "https://www.nordicnest.fi/tuotemerkit/nicolas-vahe/nicolas-vahe-pizzaleikkuri/?variantId=508921-01",
+      image:
+        "https://www.nordicnest.fi/assets/blobs/nicolas-vahe-nicolas-vahe-pizzaleikkuri-ruostumaton-teras-akaasia/508921-01_1_ProductImageMain-a9312bf18e.jpg",
+    },
+    {
+      id: "item-6",
+      name: "Ninja Detect Power Pro Tehosekoitin TB401EU",
+      price: "€169.99",
+      url: "https://www.gigantti.fi/product/kodin-pienkoneet/keittion-pienkoneet/tehosekoittimet-mikserit/tehosekoittimet/ninja-detect-power-pro-tehosekoitin-tb401eu-musta/919695",
+      image:
+        "https://next-media.elkjop.com/image/dv_web_D1800013182562/919695/ninja-detect-power-pro-tehosekoitin-tb401eu-musta.jpg?w=1200&q=75",
+    },
   ],
 };
