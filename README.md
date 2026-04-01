@@ -42,16 +42,11 @@ The `base` in `vite.config.js` and `basename` in `src/App.jsx` must match the Gi
 
 ## Customization
 
-Wedding-specific content is hardcoded per page:
+All wedding-specific content lives in one place:
 
 | File | What to update |
 |------|----------------|
-| `src/pages/Home.jsx` | `weddingDate`, `coupleName1`, `coupleName2`, schedule times |
-| `src/pages/Locations.jsx` | Venue addresses, Google Maps embed URLs |
-| `src/pages/Menu.jsx` | `menuItems` array |
-| `src/pages/Photos.jsx` | Photo sharing link |
-| `src/pages/RSVP.jsx` | `googleFormUrl` (Google Form embed), contact number |
-| `src/pages/Registry.jsx` | Gift registry items, cash gift details (Supabase-backed) |
+| `src/config/wedding.js` | Names, dates, venues, schedule, menu, Tally form URL, registry items, cash gift details |
 | `index.html` | Page title, meta description, Open Graph tags |
 
 ## Color Palette
