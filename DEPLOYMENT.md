@@ -121,14 +121,7 @@ npm run deploy
 
 ## Step 6: Customize Your Content
 
-Before deploying, make sure to update:
-
-1. **Home.jsx**: Couple names, wedding date
-2. **Locations.jsx**: Actual addresses and Google Maps embed URLs
-3. **Registry.jsx**: Registry link
-4. **Menu.jsx**: Actual menu items
-5. **Photos.jsx**: Photo sharing link
-6. **RSVP.jsx**: RSVP deadline and max guests
+Before deploying, update `src/config/wedding.js` with your actual content: names, wedding date, venue addresses, Google Maps embed URLs, menu items, Tally form URL, and registry items.
 
 ## Getting Google Maps Embed URLs
 
