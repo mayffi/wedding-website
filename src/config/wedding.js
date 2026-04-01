@@ -170,24 +170,31 @@ export const registry = {
   items: [
     {
       id: 'item-1',
-      name: 'Another Gift Item',
-      price: '€149',
-      url: 'https://www.example.com/product-2',
-      image: 'https://placehold.co/400x300?text=Gift+Item+2',
+      name: 'Hedelmäkori Lehti',
+      price: '€21.75',
+      url: 'https://lahjapiste.fi/product/hedelmakori-lehti-3/',
+      image: 'https://lahjapiste.fi/wp-content/uploads/2025/10/PT3970BK-3.jpg',
     },
     {
       id: 'item-2',
-      name: 'Third Gift Item',
-      price: '€249',
-      url: 'https://www.example.com/product-3',
-      image: 'https://placehold.co/400x300?text=Gift+Item+3',
+      name: 'Ninja Foodi K32006 Veitsisetti Veitsilohkossa Sisäänrakennetulla Veitsenteroittimella',
+      price: '€171',
+      url: 'https://www.nordicnest.fi/tuotemerkit/ninja/ninja-veitsisetti-veitsilohkossa-sisaanrakennetulla-veitsenteroittimella/?variantId=606970-01',
+      image: 'https://www.nordicnest.fi/assets/blobs/ninja-ninja-foodi-k32006-veitsisetti-veitsilohkossa-sisaanrakennetulla-veitsenteroittimella-ruostuma/606970-01_1_ProductImageMain-808811089f.png',
     },
     {
       id: 'item-3',
-      name: 'Apple Mac mini M4 Pro',
-      price: '€2 749',
-      url: 'https://www.verkkokauppa.com/fi/product/967250/Apple-Mac-mini-M4-Pro-64-Gt-1-Tt-tietokone-MCX44',
-      image: 'https://cdn.verk.net/images/17/2_967250-4000x4000.jpeg',
+      name: 'Käsinvalmistettu Bea-aamiaissetti heinäkuviolla, 4 henkilölle (12-osainen)',
+      price: '€189',
+      url: 'https://www.westwing.fi/kasinvalmistettu-bea-aamiaissetti-heinakuviolla-4-henkilolle-12-osainen-fi-24blo34190.html',
+      image: 'https://cdn.shopify.com/s/files/1/0613/3107/9307/files/DEQ24BLO34190-217447_7b00eb934ebd8f6310f629acff63c586_dtl_1.jpg',
     },
+    {
+      id: 'item-4',
+      name: 'Fissman Etikka- ja Öljypullosetti 2x150 ml',
+      price: '€20.49',
+      url: 'https://hobbyhall.fi/fi/koti-ja-keittio/ruokailuvalineet-ja-keittiotarvikkeet/keittiovalineet/fissman-etikka-ja-oljypullosetti-2x150-ml?id=8238762',
+      image: 'https://hh2.pigugroup.eu/colours/832/736/2/8327362/oljy-etikkapullosarja-2x150-ml-lasi-08ab3-netistai_reference.jpg',
+    }
   ],
 }
