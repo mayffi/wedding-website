@@ -57,7 +57,6 @@ function Home() {
       <section className="story-section">
         <div className="container">
           <h2 className="story-title">Our Story</h2>
-          <h3 className="story-subtitle">How We Met</h3>
           <p className="story-text">
             {story.text}
           </p>
