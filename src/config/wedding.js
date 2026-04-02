@@ -217,5 +217,21 @@ export const registry = {
       image:
         "https://next-media.elkjop.com/image/dv_web_D1800013182562/919695/ninja-detect-power-pro-tehosekoitin-tb401eu-musta.jpg?w=1200&q=75",
     },
+      {
+      id: "item-7",
+      name: "Tefal Ultimate Pure FV9845 Silitysrauta",
+      price: "€86,90",
+      url: "https://hobbyhall.fi/fi/kodinkoneet-ja-kodinelektroniikka/vaatteidenhoitovalineet/silitysraudat/tefal-ultimate-pure-fv9845?id=1096963",
+      image:
+        "https://hh2.pigugroup.eu/colours/110/809/8/1108098/tefal-ultimate-pure-fv9845-17158edb8036516d1ba210f2744c2108_reference.jpg",
+    },
+    {
+      id: "item-8",
+      name: "Sini Silityslauta Ballade 6400",
+      price: "€33,39",
+      url: "https://www.tokmanni.fi/silityslauta-ballade-6400-7315546400003",
+      image:
+        "https://res.cloudinary.com/tokmanni/image/upload/c_pad,b_white,f_auto,h_328,w_328/d_default.png/7315546400003.jpg",
+    },
   ],
 };
