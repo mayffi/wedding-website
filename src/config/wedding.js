@@ -37,7 +37,7 @@ export const welcome = {
 };
 
 export const story = {
-  text: "Want to hear how we met? Come back on 16th of April to read our love story!",
+  text: "Want to hear how we met? Come back on 30th of April to read our love story!",
 };
 
 export const schedule = {
