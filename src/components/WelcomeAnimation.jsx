@@ -157,7 +157,7 @@ function WelcomeAnimation() {
       lastT = t
 
       ctx.clearRect(0, 0, W, H)
-      ctx.fillStyle = '#FFFFFF'
+      ctx.fillStyle = '#FFFDF9'
       ctx.fillRect(0, 0, W, H)
 
       confettiPieces.forEach(c => {
@@ -223,7 +223,7 @@ function WelcomeAnimation() {
   }, [])
 
   return (
-    <div style={{ width: '100%', position: 'relative', overflow: 'hidden', background: '#fff', borderRadius: '12px' }}>
+    <div style={{ width: '100%', position: 'relative', overflow: 'hidden', background: '#FFFDF9', borderRadius: '12px' }}>
       <canvas ref={canvasRef} style={{ display: 'block', width: '100%' }} />
     </div>
   )

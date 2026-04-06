@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import CountdownTimer from '../components/CountdownTimer'
 import WelcomeAnimation from '../components/WelcomeAnimation'
 import '../styles/Home.css'
-import { couple, notices, welcome, story, schedule, rsvp } from '../config/wedding'
+import { couple, notices, story, schedule, rsvp } from '../config/wedding'
 
 function Home() {
 
@@ -39,11 +39,6 @@ function Home() {
       <section className="welcome-section">
         <div className="container">
           <div className="welcome-content">
-            <p className="welcome-text">
-              {welcome.message}
-            </p>
-            <div className="divider-line"></div>
-
             {/* Adults-Only Notice */}
             <div className="adults-only-notice">
               <p className="adults-only-text">{notices.adultsOnly}</p>
@@ -66,7 +61,7 @@ function Home() {
       {/* Schedule Card Section */}
       <section className="schedule-section section">
         <div className="container">
-          <h2 className="section-title">Wedding Schedule</h2>
+          <h2 className="section-title">Know the schedule</h2>
           <div className="schedule-card">
             <div className="schedule-item">
               <div className="schedule-icon">💒</div>

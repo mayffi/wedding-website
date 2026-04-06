@@ -4,10 +4,10 @@ import '../styles/Navbar.css'
 
 const navItems = [
   { path: '/', label: 'Home' },
-  { path: '/locations', label: 'Locations' },
+  { path: '/locations', label: 'Venues' },
   { path: '/rsvp', label: 'RSVP' },
   { path: '/registry', label: 'Gifts' },
-  { path: '/menu', label: 'Food Menu' },
+  { path: '/menu', label: 'Food menu' },
   { path: '/photos', label: 'Photos' },
 ]
 
