@@ -92,15 +92,6 @@
   margin: 0 auto;
 }
 
-.welcome-text {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: var(--text-dark);
-  text-align: left;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-}
-
 .divider-line {
   height: 1px;
   width: 100%;
@@ -166,7 +157,7 @@
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--text-dark);
-  text-align: left;
+  text-align: center;
   letter-spacing: 1px;
   max-width: 900px;
   margin: 0 auto;
@@ -284,7 +275,6 @@
     font-size: 2rem;
   }
 
-  .welcome-text,
   .story-text {
     font-size: 0.85rem;
     padding: 0 10px;

@@ -26,17 +26,14 @@ export const contact = {
 export const notices = {
   adultsOnly: "Our wedding is an adults-only celebration.",
   adultsOnlySubtext:
-    "We appreciate your understanding and hope to celebrate with your little ones another time!",
+    "Thank you for leaving the kids home!",
 };
 
 // ---------------------------------------------------------------------------
 // Home page content
 // ---------------------------------------------------------------------------
-export const welcome = {
-};
-
 export const story = {
-  text: "Are curious to know how we met or got here?                               Come back on April, 30th to find out!",
+  text: "Are curious to know how we met or got here? Come back on April, 30th to find out!",
 };
 
 export const schedule = {
@@ -66,7 +63,7 @@ export const ceremony = {
     "Public transport":
       "We recommend arriving by Tram 2 or Tram 7.\nTram 2 - stop at Eteläranta (5mins walk).\nTram 7 - stop at Senaatintori (11 mins walk).",
     driving:
-      " If you must drive, you can reach Bernhardinkatu 4.\n\n NB: there is limited parking at the at the church and surrounding streets (Eteläranta and laivasillankatu).\n\nOther parking areas: Aimo Park Kasarmitori at Fabianinkatu 4 (5 mins walk) and Makasiiniranta P2 and P3 .",
+      " If you must drive to Bernhardinkatu 4, please note: \n\nthere is limited parking at the at the church and surrounding streets (Eteläranta and laivasillankatu).\n\nOther parking areas: Aimo Park Kasarmitori at Fabianinkatu 4 (5 mins walk) and Makasiiniranta P2 and P3 .",
   },
 };
 
