@@ -150,11 +150,8 @@ function WelcomeAnimation() {
       ctx.restore()
     }
 
-    let lastT = 0
-
     function animate(ts) {
       const t = ts / 1000
-      lastT = t
 
       ctx.clearRect(0, 0, W, H)
       ctx.fillStyle = '#FFFDF9'

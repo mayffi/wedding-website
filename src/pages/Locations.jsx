@@ -33,7 +33,6 @@ function Locations() {
 
                   <div className="directions-grid">
                     {Object.entries(ceremony.directions)
-                      .filter(([key]) => key !== 'parking')
                       .map(([key, value]) => (
                         <div key={key} className="direction-item">
                           <h5>{key.charAt(0).toUpperCase() + key.slice(1)}</h5>
@@ -42,8 +41,6 @@ function Locations() {
                       ))}
                   </div>
                 </div>
-
-
               </div>
 
               <div className="location-map">
@@ -136,4 +133,3 @@ function Locations() {
 }
 
 export default Locations
-
