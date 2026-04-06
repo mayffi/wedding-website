@@ -6,7 +6,6 @@ import '../styles/Home.css'
 import { couple, notices, story, schedule, rsvp } from '../config/wedding'
 
 function Home() {
-
   useEffect(() => {
     document.title = 'Home - Wedding Celebration'
   }, [])
