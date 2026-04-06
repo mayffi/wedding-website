@@ -109,7 +109,7 @@ function WelcomeAnimation() {
         ctx.save()
         ctx.textAlign = 'center'
         ctx.textBaseline = 'middle'
-        ctx.font = `bold ${line.size}px 'Segoe Script','Comic Sans MS','Brush Script MT',cursive`
+        ctx.font = `bold ${line.size}px 'Georgia',serif`
         const chars = line.text.split('')
         const totalW = ctx.measureText(line.text).width
         let startX = W / 2 - totalW / 2
