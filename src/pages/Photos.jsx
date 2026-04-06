@@ -15,7 +15,6 @@ function Photos() {
           <p className="page-subtitle">Thank you for helping us preserve these beautiful memories! Please share your photos and videos with us.</p>
           <div className="photos-card">
             <div className="photos-info">
-
               <div className="upload-instructions">
                 <h2>How to share with us</h2>
                 <div className="instructions-text">
