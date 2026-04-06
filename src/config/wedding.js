@@ -24,8 +24,9 @@ export const contact = {
 };
 
 export const notices = {
-  adultsOnly:
-    "While we love our little ones, we have decided to make our wedding an adults-only celebration. Thank you for understanding.",
+  adultsOnly: "Our wedding is an adults-only celebration.",
+  adultsOnlySubtext:
+    "We appreciate your understanding and hope to celebrate with your little ones another time!",
 };
 
 // ---------------------------------------------------------------------------
@@ -37,7 +38,7 @@ export const welcome = {
 };
 
 export const story = {
-  text: "Want to hear how we met? Come back on 30th of April to read our love story!",
+  text: "Are curious to know how we met or got here?\nCome back on April 30th to find out!",
 };
 
 export const schedule = {
@@ -49,7 +50,7 @@ export const schedule = {
 // RSVP
 // ---------------------------------------------------------------------------
 export const rsvp = {
-  deadline: "10.05.2026",
+  deadline: "06.05.2026",
   // Tally embed URL — update the form ID (e.g. "81dJ0A") when the form changes
   tallyFormUrl:
     "https://tally.so/embed/81dJ0A?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1",
@@ -59,17 +60,15 @@ export const rsvp = {
 // Ceremony venue
 // ---------------------------------------------------------------------------
 export const ceremony = {
-  venueName: "German Evangelical Lutheran Church",
-  address: "Bernhardinkatu 4, 00130 Helsinki, Finland",
+  venueName: "The German Evangelical Lutheran Church",
+  address: "Address: Bernhardinkatu 4, 00130 Helsinki, Finland",
   mapUrl:
     "https://maps.google.com/maps?q=Bernhardinkatu+4,+00130+Helsinki,+Finland&output=embed",
   directions: {
+    "Public transport":
+      "We recommend arriving by Tram 2 or Tram 7.\nTram 2 - stop at Eteläranta (5mins walk).\nTram 7 - stop at Senaatintori (11 mins walk).",
     driving:
-      "The church is centrally located in the Kaartinkaupunki district. Drive to Bernhardinkatu 4, 00130 Helsinki. Street parking is available directly on Bernhardinkatu.",
-    transit:
-      "Take Tram 2 to Eteläranta tra stop and 5 min walk (257 m). Alternatively, take Tram 7 and stop at senaatintori and walk 11 mins (630 m).",
-    parking:
-      "Street parking is available on Bernhardinkatu 3-4, directly outside the church and surrounding areas(Eteläranta and laivasillankatu). Nearest parking garage: Aimo Park Kasarmitori at Fabianinkatu 4, 00130 Helsinki (~400 m walk, ~5 min).  Another option is Makasiiniranta P2 and P3 .",
+      " If you must drive, you can reach Bernhardinkatu 4.\n\n NB: there is limited parking at the at the church and surrounding streets (Eteläranta and laivasillankatu).\n\nOther parking areas: Aimo Park Kasarmitori at Fabianinkatu 4 (5 mins walk) and Makasiiniranta P2 and P3 .",
   },
 };
 
@@ -77,15 +76,14 @@ export const ceremony = {
 // Reception venue
 // ---------------------------------------------------------------------------
 export const reception = {
-  venueName: "Reception Hall",
-  address: "Keskikatu 5, 04200 Kerava",
+  venueName: "Keskikatu 5, 04200 Kerava",
   mapUrl:
     "https://maps.google.com/maps?q=Keskikatu+5,+04200+Kerava,+Finland&output=embed",
   directions: {
     "Public transportation":
-      "From Helsinki Cental Station, take the R (towards Riihimäki), K(towards Kerava) or Z(towards Lahti) train and get off at Kerava station. From Kerava station, it’s a 10-minute walk to the reception venue at Keskikatu 5.",
-    parking:
-      "There are several parking options near the reception venue. Street parking is also available on Keskikatu and surrounding streets. ",
+      "You can get to the venue with Train R (towards Riihimäki), Train K (towards Kerava) or Train Z (towards Lahti) to Kerava station (7-minute walk to the venue).\n\nYou can also take Bus 738 to Keravan asema(5-minute walk to the venue).",
+    "Driving & parking":
+      "You can drive here, and there is onsite parking as well as street parking at Keskikatu."
   },
 };
 
@@ -97,9 +95,7 @@ export const photos = {
   // Each string becomes one paragraph in the upload instructions section
   uploadInstructions: [
     "Scan the QR code or click the button below to share your shots with us.",
-    "No sign-in required, just select your files and share.",
-    "Thank you for helping us preserve these beautiful memories!",
-  ],
+    "No sign-in required, just select your files and share."],
 };
 
 // ---------------------------------------------------------------------------
@@ -108,36 +104,36 @@ export const photos = {
 export const menu = {
   items: [
     {
-      name: "Waakye",
+      name: "Waakye - Exclusively Ghanaian",
       ingredients:
-        "Rice and black-eyed beans cooked together with sorghum leaves, served with stew, fried plantain, spaghetti, shito and fried fish",
+        "Rice and cowpeas cooked with sorghum leaves, served with/or stew, fried plantain, spaghetti, shito and fried fish",
       tags: ["Gluten-Free", "Dairy-Free", "Vegan (without fish)"],
     },
     {
-      name: "Jollof Rice",
-      ingredients: "Rice slow-cooked in a rich tomato sauce",
+      name: "Ghana Jollof",
+      ingredients: "Rice slow-cooked in a rich tomato sauce - the Ghanaian way",
       tags: ["Gluten-Free", "Dairy-Free"],
     },
     {
-      name: "Fried Rice",
+      name: "Ghanaian Fried Rice",
       ingredients:
         "Stir-fried rice with mixed vegetables, eggs, and seasoned with soy sauce and aromatic spices",
       tags: ["Dairy-Free"],
     },
     {
-      name: "Fried Plantain and Beans",
+      name: "Fried Plantain + Beans Stew - the Ghanaian way",
       ingredients:
-        "Fried ripe plantains and beans stew cooked with palm oil,tomatoes, onions, and spices",
+        "Fried ripe plantains and cowpea stew cooked with palm oil, tomatoes, onions, and spices",
       tags: ["Gluten-Free", "Dairy-Free"],
     },
     {
-      name: "Banku with Pepper and Fish",
+      name: "Banku + Pepper + Fish - Exclusively Ghanaian",
       ingredients:
-        "Fermented corn and cassava dough served with a  red pepper sauce and grilled tilapia",
+        "Fermented corn and cassava dough served with a  red grinded pepper and fish",
       tags: ["Gluten-Free", "Dairy-Free"],
     },
     {
-      name: "Kosua ne Meko",
+      name: "Kosua ne Meko - Exclusively Ghanaian",
       ingredients:
         "Soft-boiled eggs with red pepper sauce, garnished with onion",
       tags: ["Gluten-Free", "Dairy-Free", "Vegetarian"],
@@ -145,7 +141,7 @@ export const menu = {
     {
       name: "Spring Rolls",
       ingredients:
-        "Crispy golden rolls filled with seasoned vegetables and served with a sweet chilli dipping sauce",
+        "Crispy golden rolls filled with seasoned vegetables",
       tags: ["Dairy-Free", "Vegetarian"],
     },
   ],
@@ -156,7 +152,7 @@ export const menu = {
 // ---------------------------------------------------------------------------
 export const cashGift = {
   message:
-    "Your presence is the greatest gift of all! If you'd like to celebrate with a monetary gift, we'd be truly grateful. You can send it via:",
+    "Having you with us is all we could ask for! If you'd like to celebrate with a monetary gift, we'd be truly grateful. You can send it via:",
   name: "Mayfred Appiah",
   mobilePay: "+358 45 102 4020", // replace with real MobilePay number
   iban: "FI64 1410 2960 6009 20", // replace with real IBAN

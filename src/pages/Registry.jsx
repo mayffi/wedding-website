@@ -95,6 +95,13 @@ function Registry() {
                 <span className="cash-gift-label">MobilePay</span>
                 <span className="cash-gift-value">{cashGift.mobilePay}</span>
               </div>
+              <div className="cash-gift-row cash-gift-row--center">
+                <img
+                  src={`${import.meta.env.BASE_URL}mbqrcode.jpg`}
+                  alt="MobilePay QR code"
+                  style={{ width: '140px', borderRadius: '8px' }}
+                />
+              </div>
               <div className="cash-gift-divider" />
               <div className="cash-gift-row">
                 <span className="cash-gift-label">Bank Transfer (IBAN)</span>
@@ -112,7 +119,7 @@ function Registry() {
       {/* ── Gift Items Section ── */}
       <section className="registry-section">
         <div className="container">
-          <h1 className="registry-page-title">Wedding Registry</h1>
+          <h1 className="registry-page-title">Other Gifts</h1>
           <p className="registry-intro">
             Here are some things we would love to have in our new home together.
             If you'd like to give one of these gifts, please click "Mark as

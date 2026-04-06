@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import CountdownTimer from '../components/CountdownTimer'
+import WelcomeAnimation from '../components/WelcomeAnimation'
 import '../styles/Home.css'
 import { couple, notices, welcome, story, schedule, rsvp } from '../config/wedding'
 
@@ -12,10 +13,10 @@ function Home() {
 
   return (
     <div className="home-page">
-      {/* Unified Card: Names + Countdown + RSVP */}
+      {/* Unified Card: Animation + Countdown + RSVP */}
       <section className="names-section">
         <div className="container">
-          <h1 className="couple-names">{couple.name1} & {couple.name2}</h1>
+          <WelcomeAnimation />
           <p className="wedding-date">{couple.weddingDateFormatted}</p>
           <div className="names-divider"></div>
           <CountdownTimer targetDate={couple.weddingDate} />
@@ -45,9 +46,8 @@ function Home() {
 
             {/* Adults-Only Notice */}
             <div className="adults-only-notice">
-              <p className="adults-only-text">
-                {notices.adultsOnly}
-              </p>
+              <p className="adults-only-text">{notices.adultsOnly}</p>
+              <p className="adults-only-subtext">{notices.adultsOnlySubtext}</p>
             </div>
           </div>
         </div>

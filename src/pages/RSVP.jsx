@@ -26,14 +26,13 @@ function RSVP() {
         <div className="container">
           <div className="rsvp-header">
             <h1 className="page-title">RSVP</h1>
-            <p className="page-subtitle">Kindly confirm your attendance below.</p>
+            <p className="page-subtitle">Help us plan our big day by confirming your attendance below.</p>
           </div>
 
           {/* Adults-Only Notice */}
           <div className="adults-only-notice-rsvp">
-            <p className="adults-only-text-rsvp">
-              {notices.adultsOnly}
-            </p>
+            <p className="adults-only-text-rsvp">{notices.adultsOnly}</p>
+            <p className="adults-only-text-rsvp" style={{ fontSize: '1rem' }}>{notices.adultsOnlySubtext}</p>
           </div>
 
           {/* Tally Form Embed */}
@@ -55,7 +54,7 @@ function RSVP() {
           <div className="contact-info-card">
             <div className="contact-icon">📞</div>
             <div className="contact-content">
-              <h2 className="contact-title">RSVP & Enquiries Contact Number</h2>
+              <h2 className="contact-title">If you have any questions or need further information, contact:</h2>
               <p className="contact-number">{contact.phone}</p>
             </div>
           </div>

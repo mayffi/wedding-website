@@ -61,6 +61,11 @@
   padding: 6px 0;
 }
 
+.cash-gift-row--center {
+  justify-content: center;
+  padding: 8px 0;
+}
+
 .cash-gift-row--sub {
   opacity: 0.75;
   font-size: 0.92rem;
