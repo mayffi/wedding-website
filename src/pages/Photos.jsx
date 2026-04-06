@@ -12,8 +12,7 @@ function Photos() {
       <section className="photos-content section">
         <div className="container">
           <h1 className="page-title">Share Your Photos & Videos</h1>
-          <p className="page-subtitle">We'd love to see your photos from our special day! Please share your moments
-                to this special album.</p>
+          <p className="page-subtitle">Thank you for helping us preserve these beautiful memories! Please share your photos and videos with us.</p>
           <div className="photos-card">
             <div className="photos-info">
 

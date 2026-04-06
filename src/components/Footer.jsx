@@ -11,7 +11,7 @@ function Footer() {
             Made with <span className="heart">♥</span> for our special day
           </p>
           <p className="footer-copyright">
-            &copy; {currentYear} All rights reserved
+            &copy; Sam &amp; May 26&apos;
           </p>
         </div>
       </div>
