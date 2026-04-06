@@ -11,8 +11,8 @@ function Locations() {
     <div className="locations-page">
       <section className="location-section section">
         <div className="container">
-          <h1 className="page-title">Event Locations</h1>
-          <p className="page-subtitle">Our wedding and reception will take place in the following locations</p>
+          <h1 className="page-title">Our venues</h1>
+          <p className="page-subtitle">Our wedding and reception will take place in the following venues</p>
         </div>
       </section>
 
@@ -21,7 +21,7 @@ function Locations() {
         <div className="container">
           <div className="location-card">
             <div className="location-header">
-              <h2 className="location-title">The Church Ceremony</h2>
+              <h2 className="location-title">Church ceremony</h2>
               <div className="location-divider"></div>
             </div>
             <div className="location-content">
@@ -78,7 +78,7 @@ function Locations() {
         <div className="container">
           <div className="location-card">
             <div className="location-header">
-              <h2 className="location-title">The Reception</h2>
+              <h2 className="location-title">Reception</h2>
               <div className="location-divider"></div>
             </div>
             <div className="location-content">

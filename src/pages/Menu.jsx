@@ -20,8 +20,8 @@ function Menu() {
     <div className="menu-page">
       <section className="menu-content section">
         <div className="container">
-          <h1 className="page-title">Our Menu for You</h1>
-          <p className="page-subtitle">Here are a few selection of Ghanaian dishes for your enjoyment</p>
+          <h1 className="page-title">Our menu</h1>
+          <p className="page-subtitle">We are very excited to serve you these selected Ghanaian dishes and exclusives!</p>
           <div className="menu-grid">
             {menu.items.map((item, index) => (
               <div key={index} className="menu-item fade-in">

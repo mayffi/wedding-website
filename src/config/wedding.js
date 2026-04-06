@@ -33,12 +33,10 @@ export const notices = {
 // Home page content
 // ---------------------------------------------------------------------------
 export const welcome = {
-  message:
-    "Welcome to our wedsite. Here you will find the details of the event. We are very excited to celebrate this special day with you. Please check back for more updates as the date gets closer.",
 };
 
 export const story = {
-  text: "Are curious to know how we met or got here?\nCome back on April 30th to find out!",
+  text: "Are curious to know how we met or got here?                               Come back on April, 30th to find out!",
 };
 
 export const schedule = {
