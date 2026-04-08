@@ -33,7 +33,7 @@ export const notices = {
 // Home page content
 // ---------------------------------------------------------------------------
 export const story = {
-  text: "Are curious to know how we met or got here? Come back on April, 30th to find out!",
+  text: "Are you curious to know how we met or got here? Come back on April, 30th to find out!",
 };
 
 export const schedule = {
