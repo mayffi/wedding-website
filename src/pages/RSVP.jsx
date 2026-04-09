@@ -32,7 +32,7 @@ function RSVP() {
           {/* Adults-Only Notice */}
           <div className="adults-only-notice-rsvp">
             <p className="adults-only-text-rsvp">{rsvp.notice}</p>
-            <p className="adults-only-text-rsvp" style={{ fontSize: '1rem' }}>{rsvp.noticeSubtext}</p>
+            <p className="adults-only-text-rsvp" style={{ fontSize: '1.25rem' }}>{rsvp.noticeSubtext}</p>
           </div>
 
           {/* Tally Form Embed */}
