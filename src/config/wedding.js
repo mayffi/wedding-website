@@ -48,7 +48,7 @@ export const rsvp = {
   notice:
     "Our wedding is an adults-only celebration due to limited space.",
   noticeSubtext:
-    "Thank you for understanding and leaving the kids home!",
+    "Please note that we are only able to accommodate adult guests. Thank you for understanding.",
   deadline: "06.05.2026",
   // Tally embed URL — update the form ID (e.g. "81dJ0A") when the form changes
   tallyFormUrl:
