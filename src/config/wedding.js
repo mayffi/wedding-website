@@ -45,6 +45,10 @@ export const schedule = {
 // RSVP
 // ---------------------------------------------------------------------------
 export const rsvp = {
+  notice:
+    "Our wedding is an adults-only celebration due to limited space.",
+  noticeSubtext:
+    "Thank you for understanding and leaving the kids home!",
   deadline: "06.05.2026",
   // Tally embed URL — update the form ID (e.g. "81dJ0A") when the form changes
   tallyFormUrl:

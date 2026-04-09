@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import '../styles/RSVP.css'
-import { rsvp, contact, notices } from '../config/wedding'
+import { rsvp, contact } from '../config/wedding'
 
 function RSVP() {
   useEffect(() => {
@@ -31,8 +31,8 @@ function RSVP() {
 
           {/* Adults-Only Notice */}
           <div className="adults-only-notice-rsvp">
-            <p className="adults-only-text-rsvp">{notices.adultsOnly}</p>
-            <p className="adults-only-text-rsvp" style={{ fontSize: '1rem' }}>{notices.adultsOnlySubtext}</p>
+            <p className="adults-only-text-rsvp">{rsvp.notice}</p>
+            <p className="adults-only-text-rsvp" style={{ fontSize: '1rem' }}>{rsvp.noticeSubtext}</p>
           </div>
 
           {/* Tally Form Embed */}
