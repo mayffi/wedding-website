@@ -45,6 +45,14 @@
   font-style: italic;
 }
 
+.adults-only-subtext-rsvp {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin: 0;
+  font-style: italic;
+}
+
 /* Google Form Container */
 .form-container {
   max-width: 900px;
@@ -107,6 +115,16 @@
 
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .adults-only-text-rsvp {
+    font-size: 1.5rem;
+  }
+
+  .adults-only-subtext-rsvp {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .rsvp-content {
     padding: 40px 0;
@@ -152,7 +170,11 @@
   }
 
   .adults-only-text-rsvp {
-    font-size: 0.9rem;
+    font-size: 1.15rem;
+  }
+
+  .adults-only-subtext-rsvp {
+    font-size: 1.05rem;
   }
 }
 
