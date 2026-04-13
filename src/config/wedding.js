@@ -244,5 +244,53 @@ export const registry = {
       image:
         "https://www.24hshop.fi/pub_images/original/120159.jpg",
     },
+    {
+      id: "item-11",
+      name: "House ruoansäilytysastia terästä 600 ml",
+      price: "€6,95",
+      url: "https://www.prisma.fi/tuotteet/110388577/house-ruoansailytysastia-terasta-600-ml-110388577",
+      image:
+        "https://cdn.s-cloud.fi/v1/w1200_q60/assets/dam-id/3nLlXDSZat98JdWWRNvZ0d.png",
+    },
+    {
+      id: "item-12",
+      name: "House ruoansäilytysastia terästä 2250 ml",
+      price: "€10,95",
+      url: "https://www.prisma.fi/tuotteet/110388578/house-ruoansailytysastia-terasta-2250-ml-110388578",
+      image:
+        "https://cdn.s-cloud.fi/v1/w1440_q60/assets/dam-id/DndDqMFma_RAP3W9yRWAV8.webp",
+    },
+    {
+      id: "item-13",
+      name: "220x210cmZACK pussilakanasetti parivuode orgaaninen",
+      price: "€39,99",
+      url: "https://www.jotex.fi/zack/zack-pussilakanasetti-parivuode-orgaaninen/1504301-48",
+      image:
+        "https://assets.ellosgroup.com/i/ellos/jot_1504301-48_Fm_M0085517",
+    },
+    {
+      id: "item-14",
+      name: "230x220cm Fresh Garden pussilakanasetti moniväri/vihreä",
+      price: "€39,98",
+      url: "https://www.hemtex.fi/makuuhuone/pussilakanasetit/pussilakanasetit-peruspuuvillasta/fresh-garden-pussilakanasetti-monivarivihrea",
+      image:
+        "https://www.hemtex.fi/globalassets/productimages/212832200324.jpg?ref=3FCE26BD04&w=590&bgcolor=F5F2EB&borderwidth=59&mode=pad&h=754",
+    },
+    {
+      id: "item-15",
+      name: "Bedspread Double Matilda päiväpeite",
+      price: "€42,34",
+      url: "https://www.jotex.fi/matilda/bedspread-double-matilda-paivapeite/1041161-03",
+      image:
+        "https://assets.ellosgroup.com/i/ellos/b?$jg$&$jm$&$jp$&$jd$&n=jot_1041161-03_De_01&mw=776&fmt=webp",
+    },
+    {
+      id: "item-16",
+      name: "ZACK muotoonommeltu lakana orgaaninen",
+      price: "€25,99",
+      url: "https://www.jotex.fi/zack/zack-muotoonommeltu-lakana-orgaaninen/1065265-32",
+      image:
+        "https://assets.ellosgroup.com/i/ellos/b?$jg$&$jm$&$jp$&$jd$&n=jot_1065265-32_Fs&mw=776&fmt=webp",
+    },
   ],
 };
