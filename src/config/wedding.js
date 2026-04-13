@@ -222,11 +222,27 @@ export const registry = {
     },
     {
       id: "item-8",
+      name: "Stanley The Café-To-Go Travel Mug, 0.47 L, Rose Quartz",
+      price: "€40",
+      url: "https://www.verkkokauppa.com/fi/product/1027289/Stanley-The-Cafe-To-Go-Travel-Mug-termosmuki-0-47-l-Rose-Qua",
+      image:
+        "https://cdn.verk.net/kuvastin/w:1632/h:1020/rt:fit/q:80/ex:1/sh:0.5/plain/images/8/2_1027289-496x1455.jpg",
+    },
+    {
+      id: "item-9",
       name: "Sini Silityslauta Ballade 6400",
       price: "€33,39",
       url: "https://www.tokmanni.fi/silityslauta-ballade-6400-7315546400003",
       image:
         "https://res.cloudinary.com/tokmanni/image/upload/c_pad,b_white,f_auto,h_328,w_328/d_default.png/7315546400003.jpg",
+    },
+    {
+      id: "item-10",
+      name: "Maustepurkit joissa on kansi 12-pack",
+      price: "€17.90",
+      url: "https://www.24hshop.fi/koti-puutarha/keittiokoneet/keittiotuotteita/ovriga-kokstillbehor/maustepurkit-joissa-on-kansi-12-pack-12-pack",
+      image:
+        "https://www.24hshop.fi/pub_images/original/120159.jpg",
     },
   ],
 };
