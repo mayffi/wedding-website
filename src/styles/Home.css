@@ -1,5 +1,5 @@
 .home-page {
-  padding-top: 70px;
+  padding-top: 110px;
 }
 
 /* Hero Section */
@@ -130,16 +130,21 @@
 .story-section {
   background-color: var(--cream-bg);
   padding: 60px 0 80px;
+  /* Offset the navbar (70px) + sticky story banner (~40px) so the section
+     anchor lands below them when reached via /#story. */
+  scroll-margin-top: 120px;
 }
 
 .story-title {
-  font-family: 'Georgia', serif;
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--text-dark);
-  text-align: center;
-  margin-bottom: 20px;
-  font-style: italic;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.40rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--gold-accent);
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto 14px;
 }
 
 .story-subtitle {
@@ -161,6 +166,82 @@
   letter-spacing: 1px;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.story-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-white, #ffffff);
+  border-radius: 16px;
+  padding: 50px 60px;
+  box-shadow: 0 8px 30px rgba(43, 80, 142, 0.08);
+}
+
+/* Inside the card, the title/prose/toggle stretch full-width and share a
+   left gold rule that visually ties the section together. */
+.story-card .story-title,
+.story-card .story-prose,
+.story-card .story-toggle-wrap {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  border-left: 3px solid var(--gold-accent);
+  padding-left: 28px;
+}
+
+.story-prose {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.story-paragraph {
+  font-family: 'Georgia', serif;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-dark);
+  text-align: left;
+  margin: 0 0 1.2em;
+}
+
+.story-divider {
+  text-align: center;
+  color: var(--gold-accent);
+  font-size: 1.4rem;
+  letter-spacing: 0.6em;
+  margin: 2.2em 0;
+  user-select: none;
+}
+
+/* Smooth expand/collapse using the grid-template-rows 0fr → 1fr trick.
+   This animates real auto height without measuring the content. */
+.story-expandable {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.6s ease;
+}
+
+.story-expandable.open {
+  grid-template-rows: 1fr;
+}
+
+.story-expandable-inner {
+  overflow: hidden;
+}
+
+.story-toggle-wrap {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 700px;
+  margin: 35px auto 0;
+}
+
+.story-toggle-btn {
+  background-color: var(--primary);
+}
+
+.story-toggle-btn:hover {
+  background-color: #1f3d70;
+  box-shadow: 0 4px 12px rgba(43, 80, 142, 0.25);
 }
 
 .section-title {
@@ -192,6 +273,52 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  position: relative;
+  padding: 8px 12px;
+  margin: -8px -12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.25s ease, transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.schedule-item:hover,
+.schedule-item:focus-visible {
+  background-color: rgba(130, 174, 209, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(43, 80, 142, 0.10);
+  outline: none;
+}
+
+.schedule-item:focus-visible {
+  outline: 2px solid var(--blue-accent);
+  outline-offset: 2px;
+}
+
+.schedule-chevron {
+  margin-left: auto;
+  font-size: 1.4rem;
+  color: var(--gold-accent);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.schedule-item:hover .schedule-chevron,
+.schedule-item:focus-visible .schedule-chevron {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.schedule-hint {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-dark);
+  opacity: 0.65;
 }
 
 .schedule-icon {
@@ -248,7 +375,8 @@
   }
 
   .story-title {
-    font-size: 1.75rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
   }
 
   .story-subtitle {
@@ -269,6 +397,16 @@
     gap: 15px;
   }
 
+  .schedule-chevron {
+    margin-left: 0;
+    opacity: 0.7;
+    transform: none;
+  }
+
+  .schedule-hint {
+    font-size: 0.82rem;
+  }
+
   .schedule-icon {
     width: 60px;
     height: 60px;
@@ -278,6 +416,26 @@
   .story-text {
     font-size: 0.85rem;
     padding: 0 10px;
+  }
+
+  .story-paragraph {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .story-card {
+    padding: 35px 24px;
+  }
+
+  .story-card .story-title,
+  .story-card .story-prose,
+  .story-card .story-toggle-wrap {
+    padding-left: 18px;
+  }
+
+  .story-divider {
+    font-size: 1.1rem;
+    margin: 1.8em 0;
   }
 
   .adults-only-notice {
