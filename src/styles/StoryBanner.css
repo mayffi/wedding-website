@@ -1,0 +1,40 @@
+/* Banner sits directly below the fixed navbar (70px tall).
+   Cream background blends into the page; only the thin gold underline
+   gives it presence so it doesn't read as a heavy band. */
+.story-banner {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  background-color: var(--cream-bg);
+  color: var(--primary);
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  padding: 9px 20px;
+  border-bottom: 1px solid var(--gold-accent);
+}
+
+.story-banner-link {
+  color: var(--gold-accent);
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 4px;
+  transition: color 0.2s ease;
+}
+
+.story-banner-link:hover,
+.story-banner-link:focus-visible {
+  color: #b48a4d;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .story-banner {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}

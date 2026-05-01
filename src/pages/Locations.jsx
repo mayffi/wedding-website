@@ -1,11 +1,27 @@
 import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import '../styles/Locations.css'
 import { ceremony, reception } from '../config/wedding'
 
 function Locations() {
+  const { hash } = useLocation()
+
   useEffect(() => {
     document.title = 'Locations - Wedding Celebration'
   }, [])
+
+  // React Router does not auto-scroll to hash anchors; do it manually after
+  // the page renders. The slight delay lets layout settle (iframes etc.).
+  useEffect(() => {
+    if (!hash) return
+    const id = hash.replace('#', '')
+    const el = document.getElementById(id)
+    if (el) {
+      requestAnimationFrame(() => {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      })
+    }
+  }, [hash])
 
   return (
     <div className="locations-page">
@@ -17,7 +33,7 @@ function Locations() {
       </section>
 
       {/* Ceremony Location */}
-      <section className="location-section section">
+      <section id="ceremony" className="location-section section location-anchor">
         <div className="container">
           <div className="location-card">
             <div className="location-header">
@@ -71,7 +87,7 @@ function Locations() {
       </section>
 
       {/* Reception Location */}
-      <section className="location-section section">
+      <section id="reception" className="location-section section location-anchor">
         <div className="container">
           <div className="location-card">
             <div className="location-header">

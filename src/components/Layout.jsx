@@ -1,5 +1,6 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
+import StoryBanner from './StoryBanner'
 
 function Layout({ children }) {
   return (
@@ -8,6 +9,7 @@ function Layout({ children }) {
         Skip to main content
       </a>
       <Navbar />
+      <StoryBanner />
       <main id="main-content">
         {children}
       </main>
