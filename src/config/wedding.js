@@ -436,5 +436,13 @@ export const registry = {
       image:
         "https://assets.ellosgroup.com/i/ellos/b?$jg$&$jm$&$jp$&$jd$&n=jot_1065265-32_Fs&mw=776&fmt=webp",
     },
+    {
+      id: "item-17",
+      name: "House ruoansäilytysastia terästä 1300 ml",
+      price: "€8,95",
+      url: "https://www.prisma.fi/tuotteet/110388584/house-ruoansailytysastia-terasta-1300-ml-110388584",
+      image:
+        "https://cdn.s-cloud.fi/v1/w1440_q60/assets/dam-id/ECcRp21M4vJByFOGiGLX-t.webp",
+    },
   ],
 };
