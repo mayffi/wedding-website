@@ -444,5 +444,29 @@ export const registry = {
       image:
         "https://cdn.s-cloud.fi/v1/w1440_q60/assets/dam-id/ECcRp21M4vJByFOGiGLX-t.webp",
     },
+    {
+      id: "item-18",
+      name: "Dorre Kay kannu 1,3 L",
+      price: "€13",
+      url: "https://www.kitchentime.fi/tuotemerkit/dorre/kay-kannu-13-l/?variantId=505939-01",
+      image:
+        "https://www.kitchentime.fi/assets/blobs/dorre-kay-kannu-13-l-lasi-ruostumaton-teras/505939-01_1_ProductImageMain-f79a7ca0e6.jpg",
+    },
+    {
+      id: "item-19",
+      name: "Lyngby Glas Juvel vesilasi 39 cl 6-pakkaus",
+      price: "€21,90",
+      url: "https://www.kitchentime.fi/tuotemerkit/lyngby-glas/juvel-vesilasi-39-cl-6pakkaus/?variantId=585226-01",
+      image:
+        "https://www.kitchentime.fi/assets/blobs/lyngby-glas-juvel-vesilasi-39-cl-6-pakkaus-kirkas/585226-01_1_ProductImageMain-4a315864b3.png",
+    },
+    {
+      id: "item-20",
+      name: "Aida juomalasi 33 cl 6 osaa",
+      price: "€14,99",
+      url: "https://www.kitchentime.fi/tuotemerkit/aida/aida-juomalasi-33-cl-6-osaa/?variantId=639323-01",
+      image:
+        "https://www.kitchentime.fi/assets/blobs/aida-aida-juomalasi-33-cl-6-osaa-kirkas/639323-01_1_ProductImageMain-90a048923a.png",
+    },
   ],
 };
