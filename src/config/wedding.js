@@ -291,18 +291,6 @@ export const menu = {
 };
 
 // ---------------------------------------------------------------------------
-// Cash Gift (shown at top of Registry page)
-// ---------------------------------------------------------------------------
-export const cashGift = {
-  message:
-    "Having you with us is all we could ask for! If you'd like to celebrate with a monetary gift, we'd be truly grateful. You can send it via:",
-  name: "Mayfred Appiah",
-  mobilePay: "[REDACTED]", // replace with real MobilePay number
-  iban: "[REDACTED]", // replace with real IBAN
-  bankName: "Nordea", // replace with real bank name
-};
-
-// ---------------------------------------------------------------------------
 // Gift Registry items
 // Note: provide 'image' as a direct URL (e.g. product CDN image).
 // Open Graph scraping is not possible on a static site — no backend is available.

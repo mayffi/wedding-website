@@ -3,88 +3,6 @@
   padding-top: 110px;
 }
 
-/* ── Cash Gift Section ── */
-.cash-gift-section {
-  background-color: var(--cream-bg);
-  padding: 60px 0;
-}
-
-.cash-gift-card {
-  max-width: 640px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 50px 44px;
-  box-shadow: 0 8px 30px rgba(43, 80, 142, 0.1);
-  text-align: center;
-  border-top: 4px solid var(--gold-accent);
-}
-
-.cash-gift-icon {
-  font-size: 2rem;
-  color: var(--gold-accent);
-  margin-bottom: 12px;
-}
-
-.cash-gift-title {
-  font-size: 1.8rem;
-  color: var(--primary);
-  margin-bottom: 20px;
-}
-
-.cash-gift-message {
-  font-size: 1.05rem;
-  color: var(--text-dark);
-  line-height: 1.8;
-  margin-bottom: 32px;
-  font-style: italic;
-}
-
-.cash-gift-details {
-  text-align: left;
-  background-color: var(--cream-bg);
-  border-radius: 10px;
-  padding: 24px 28px;
-}
-
-.cash-gift-divider {
-  height: 1px;
-  background-color: #e0d8cc;
-  margin: 14px 0;
-}
-
-.cash-gift-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  padding: 6px 0;
-}
-
-.cash-gift-row--center {
-  justify-content: center;
-  padding: 8px 0;
-}
-
-.cash-gift-row--sub {
-  opacity: 0.75;
-  font-size: 0.92rem;
-}
-
-.cash-gift-label {
-  font-weight: 600;
-  color: var(--primary);
-  font-size: 0.95rem;
-  flex-shrink: 0;
-}
-
-.cash-gift-value {
-  color: var(--text-dark);
-  font-size: 0.95rem;
-  font-family: 'Courier New', monospace;
-  word-break: break-all;
-}
-
 /* ── Gift Items Section ── */
 .registry-section {
   padding: 60px 0 80px;
@@ -264,23 +182,7 @@
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .cash-gift-card {
-    padding: 36px 24px;
-  }
-
-  .cash-gift-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-
   .registry-grid {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .cash-gift-details {
-    padding: 18px 16px;
   }
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../styles/Registry.css'
-import { cashGift, registry } from '../config/wedding'
+import { registry } from '../config/wedding'
 import { supabase } from '../lib/supabase'
 
 const BROWSER_ID_KEY = 'wedding_browser_id'
@@ -78,48 +78,10 @@ function Registry() {
 
   return (
     <div className="registry-page">
-      {/* ── Cash Gift Section ── */}
-      <section className="cash-gift-section">
-        <div className="container">
-          <div className="cash-gift-card">
-            <div className="cash-gift-icon">♥</div>
-            <h2 className="cash-gift-title">Cash Gift</h2>
-            <p className="cash-gift-message">{cashGift.message}</p>
-            <div className="cash-gift-details">
-              <div className="cash-gift-row">
-                <span className="cash-gift-label">Name</span>
-                <span className="cash-gift-value">{cashGift.name}</span>
-              </div>
-              <div className="cash-gift-divider" />
-              <div className="cash-gift-row">
-                <span className="cash-gift-label">MobilePay</span>
-                <span className="cash-gift-value">{cashGift.mobilePay}</span>
-              </div>
-              <div className="cash-gift-row cash-gift-row--center">
-                <img
-                  src={`${import.meta.env.BASE_URL}mbqrcode.jpg`}
-                  alt="MobilePay QR code"
-                  style={{ width: '140px', borderRadius: '8px' }}
-                />
-              </div>
-              <div className="cash-gift-divider" />
-              <div className="cash-gift-row">
-                <span className="cash-gift-label">Bank Transfer (IBAN)</span>
-                <span className="cash-gift-value">{cashGift.iban}</span>
-              </div>
-              <div className="cash-gift-row cash-gift-row--sub">
-                <span className="cash-gift-label">Bank</span>
-                <span className="cash-gift-value">{cashGift.bankName}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── Gift Items Section ── */}
       <section className="registry-section">
         <div className="container">
-          <h1 className="registry-page-title">Other Gifts</h1>
+          <h1 className="registry-page-title">Gift Registry</h1>
           <p className="registry-intro">
             Here are some things we would love to have in our new home together.
             If you'd like to give one of these gifts, please click "Mark as
