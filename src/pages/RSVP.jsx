@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import '../styles/RSVP.css'
-import { rsvp, contact } from '../config/wedding'
+import { rsvp } from '../config/wedding'
 
 function RSVP() {
   useEffect(() => {
@@ -50,14 +50,6 @@ function RSVP() {
             />
           </div>
 
-          {/* Contact Information Section */}
-          <div className="contact-info-card">
-            <div className="contact-icon">📞</div>
-            <div className="contact-content">
-              <h2 className="contact-title">If you have any questions or need further information, contact:</h2>
-              <p className="contact-number">{contact.phone}</p>
-            </div>
-          </div>
         </div>
       </section>
     </div>

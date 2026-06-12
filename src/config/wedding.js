@@ -19,10 +19,6 @@ export const couple = {
 // ---------------------------------------------------------------------------
 // Shared values (used on multiple pages)
 // ---------------------------------------------------------------------------
-export const contact = {
-  phone: "[REDACTED]",
-};
-
 export const notices = {
   adultsOnly: "Our wedding is an adults-only celebration.",
   adultsOnlySubtext:
