@@ -250,7 +250,7 @@ export const menu = {
       name: "Waakye - Exclusively Ghanaian",
       ingredients:
         "Rice and cowpeas cooked with sorghum leaves, served with/or stew, fried plantain, spaghetti, shito and fried fish",
-      tags: ["Gluten-Free", "Dairy-Free", "Vegan (without fish)"],
+      tags: ["Gluten-Free(without spaghetti)", "Dairy-Free", "Vegan (without fish)"],
     },
     {
       name: "Ghana Jollof",
@@ -261,7 +261,7 @@ export const menu = {
       name: "Ghanaian Fried Rice",
       ingredients:
         "Stir-fried rice with mixed vegetables, eggs, and seasoned with soy sauce and aromatic spices",
-      tags: ["Dairy-Free"],
+      tags: ["Dairy-Free", "Vegetarian"],
     },
     {
       name: "Fried Plantain + Beans Stew - the Ghanaian way",
@@ -278,14 +278,14 @@ export const menu = {
     {
       name: "Kosua ne Meko - Exclusively Ghanaian",
       ingredients:
-        "Soft-boiled eggs with red pepper sauce, garnished with onion",
+        "Hard-boiled eggs with red pepper sauce, garnished with onion",
       tags: ["Gluten-Free", "Dairy-Free", "Vegetarian"],
     },
     {
-      name: "Spring Rolls",
+      name: "Gari Fortor",
       ingredients:
-        "Crispy golden rolls filled with seasoned vegetables",
-      tags: ["Dairy-Free", "Vegetarian"],
+        "Seasoned cassava granules infused with a rich, aromatic spiced tomato stew, vegetables and tuna",
+      tags: ["Gluten-Free", "Dairy-Free"],
     },
   ],
 };
